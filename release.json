@@ -1,0 +1,3521 @@
+{
+  "version": "25.0.0",
+  "releaseDate": "2026-11-25",
+  "sourceCommit": "a45c121d1ef714e0e67f9d6937fa17889dab7589",
+  "sourceTag": "v25",
+  "sourceArchive": "source-v25.zip",
+  "sourceArchiveSha256": "fd61c9c3f38cdd66ade592ea8de93f98fd8f6df7df593a32e193ea29ad3d7ca2",
+  "sourceFileCount": 933,
+  "checks": {
+    "typecheck": "passed",
+    "build": "passed; fresh snapshot without .env and stripped inherited environment; base=/finansu-harmonija-v25/",
+    "targetedTests": {
+      "passed": 37,
+      "failed": 0
+    },
+    "fullTests": {
+      "startedAt": "2026-11-25T08:12:21.524Z",
+      "completedAt": "2026-11-25T08:12:38.758Z",
+      "project": "/Users/albert/Desktop/Logibyte/MESO/Finansu Harmonija Frontend/untitled folder/V25",
+      "node": "v24.18.0",
+      "command": [
+        "/usr/local/bin/node",
+        "--test",
+        "--test-concurrency=4",
+        "--test-reporter=tap",
+        "tests/activity-log.test.mjs",
+        "tests/admin-controls.test.mjs",
+        "tests/advance-employee.test.mjs",
+        "tests/balance-confirmation.test.mjs",
+        "tests/bank-matching-demo.test.mjs",
+        "tests/bank-processing-status.test.mjs",
+        "tests/bank-transaction-creation.test.mjs",
+        "tests/bank-transaction.test.mjs",
+        "tests/cash.test.mjs",
+        "tests/chat-notification-example.test.mjs",
+        "tests/chat-notifications.test.mjs",
+        "tests/column-settings-groups.test.mjs",
+        "tests/companies-bulk-actions.test.mjs",
+        "tests/companies-header-actions.test.mjs",
+        "tests/company-bank-account-display.test.mjs",
+        "tests/company-bank-amounts.test.mjs",
+        "tests/company-bank-columns.test.mjs",
+        "tests/company-bank-editing.test.mjs",
+        "tests/company-bank-setup.test.mjs",
+        "tests/company-chart-of-accounts.test.mjs",
+        "tests/company-counterparty-actions.test.mjs",
+        "tests/company-counterparty-import.test.mjs",
+        "tests/company-debts-navigation.test.mjs",
+        "tests/company-digitization-settings.test.mjs",
+        "tests/company-expense-import.test.mjs",
+        "tests/company-menu-toggle.test.mjs",
+        "tests/company-payments.test.mjs",
+        "tests/company-saas.test.mjs",
+        "tests/company-settings-navigation.test.mjs",
+        "tests/company-substitutions.test.mjs",
+        "tests/contract-pricing.test.mjs",
+        "tests/contract-settings.test.mjs",
+        "tests/dashboard-ocr-notifications.test.mjs",
+        "tests/debt-actions.test.mjs",
+        "tests/debt-details.test.mjs",
+        "tests/debt-overdue-columns.test.mjs",
+        "tests/delete-buttons-lifecycle.test.mjs",
+        "tests/demo-chat.test.mjs",
+        "tests/directory-lifecycle.test.mjs",
+        "tests/document-access-identity.test.mjs",
+        "tests/document-accounting-export.test.mjs",
+        "tests/document-accounting-requirements.test.mjs",
+        "tests/document-action-history.test.mjs",
+        "tests/document-actions-menu.test.mjs",
+        "tests/document-approval.test.mjs",
+        "tests/document-archive.test.mjs",
+        "tests/document-bulk-assignment.test.mjs",
+        "tests/document-detail-editing.test.mjs",
+        "tests/document-detailed-digitization.test.mjs",
+        "tests/document-direct-delivery.test.mjs",
+        "tests/document-dropdowns.test.mjs",
+        "tests/document-editor-chat.test.mjs",
+        "tests/document-export.test.mjs",
+        "tests/document-field-alignment.test.mjs",
+        "tests/document-inline-editing.test.mjs",
+        "tests/document-inline-field-design.test.mjs",
+        "tests/document-issue-conversation.test.mjs",
+        "tests/document-issue-fix.test.mjs",
+        "tests/document-issue-table.test.mjs",
+        "tests/document-issues.test.mjs",
+        "tests/document-number.test.mjs",
+        "tests/document-organization-assignment.test.mjs",
+        "tests/document-preview.test.mjs",
+        "tests/document-processing-status.test.mjs",
+        "tests/document-purpose-catalog.test.mjs",
+        "tests/document-receipt-classification.test.mjs",
+        "tests/document-register-editor-actions.test.mjs",
+        "tests/document-register-menu.test.mjs",
+        "tests/document-responsible-users.test.mjs",
+        "tests/document-row-actions.test.mjs",
+        "tests/document-storno.test.mjs",
+        "tests/document-test-delivery.test.mjs",
+        "tests/document-testing-examples.test.mjs",
+        "tests/document-type-catalog.test.mjs",
+        "tests/document-type-navigation.test.mjs",
+        "tests/document-type-validation.test.mjs",
+        "tests/dropdown-behavior.test.mjs",
+        "tests/export-format-schemas.test.mjs",
+        "tests/external-role-user-status.test.mjs",
+        "tests/financial-statement-items.test.mjs",
+        "tests/financial-statement-language.test.mjs",
+        "tests/fixed-asset-examples.test.mjs",
+        "tests/fixed-asset-store.test.mjs",
+        "tests/fixed-assets.test.mjs",
+        "tests/general-ledger-usage.test.mjs",
+        "tests/general-reference-catalogs.test.mjs",
+        "tests/gl-journal-closing.test.mjs",
+        "tests/gl-journal-drafts.test.mjs",
+        "tests/gl-journal-extended.test.mjs",
+        "tests/gl-journal-revaluation.test.mjs",
+        "tests/gl-journal-source.test.mjs",
+        "tests/gl-journal.test.mjs",
+        "tests/global-document-actions.test.mjs",
+        "tests/global-document-amount-display.test.mjs",
+        "tests/global-document-column-layout.test.mjs",
+        "tests/global-document-navigation.test.mjs",
+        "tests/global-document-organizations.test.mjs",
+        "tests/global-document-settings.test.mjs",
+        "tests/help-center.test.mjs",
+        "tests/help-content.test.mjs",
+        "tests/help-user-guides.test.mjs",
+        "tests/important-notifications.test.mjs",
+        "tests/integrations-help.test.mjs",
+        "tests/invoice-creation.test.mjs",
+        "tests/keyboard-navigation.test.mjs",
+        "tests/language.test.mjs",
+        "tests/latvian-integrations.test.mjs",
+        "tests/manual-reconciliation.test.mjs",
+        "tests/neutral-demo-names.test.mjs",
+        "tests/notification-attention.test.mjs",
+        "tests/notification-bell.test.mjs",
+        "tests/notification-chat-navigation.test.mjs",
+        "tests/notification-details-panel.test.mjs",
+        "tests/notification-module-types.test.mjs",
+        "tests/notification-object-examples.test.mjs",
+        "tests/notification-organization-scope.test.mjs",
+        "tests/notification-presentation.test.mjs",
+        "tests/notification-sections.test.mjs",
+        "tests/notification-tab-counts.test.mjs",
+        "tests/ocr-accounting-fields.test.mjs",
+        "tests/ocr-additional-information.test.mjs",
+        "tests/ocr-approval-routing.test.mjs",
+        "tests/ocr-automatic-routing.test.mjs",
+        "tests/ocr-automation-document.test.mjs",
+        "tests/ocr-automation-rules.test.mjs",
+        "tests/ocr-chat-related-objects.test.mjs",
+        "tests/ocr-configured-form.test.mjs",
+        "tests/ocr-document-delivery.test.mjs",
+        "tests/ocr-document-issues-navigation.test.mjs",
+        "tests/ocr-document-rules-layout.test.mjs",
+        "tests/ocr-document-type-editor.test.mjs",
+        "tests/ocr-document-upload.test.mjs",
+        "tests/ocr-editor-layout.test.mjs",
+        "tests/ocr-editor-live-importance.test.mjs",
+        "tests/ocr-editor-workspace.test.mjs",
+        "tests/ocr-field-importance.test.mjs",
+        "tests/ocr-handwriting.test.mjs",
+        "tests/ocr-inbox.test.mjs",
+        "tests/ocr-learning-documents.test.mjs",
+        "tests/ocr-learning-presentation.test.mjs",
+        "tests/ocr-learning-rule-store.test.mjs",
+        "tests/ocr-learning-store.test.mjs",
+        "tests/ocr-learning.test.mjs",
+        "tests/ocr-my-tasks.test.mjs",
+        "tests/ocr-no-accounting-creation.test.mjs",
+        "tests/ocr-original-text-selection.test.mjs",
+        "tests/ocr-party-layout.test.mjs",
+        "tests/ocr-processing-documents.test.mjs",
+        "tests/ocr-purpose-catalog.test.mjs",
+        "tests/ocr-quality-warnings.test.mjs",
+        "tests/ocr-record-lifecycle.test.mjs",
+        "tests/ocr-register-scenarios.test.mjs",
+        "tests/ocr-required-fields.test.mjs",
+        "tests/ocr-review-analytics.test.mjs",
+        "tests/ocr-review-document-view.test.mjs",
+        "tests/ocr-status-lifecycle.test.mjs",
+        "tests/ocr-status-presentation.test.mjs",
+        "tests/ocr-task-columns.test.mjs",
+        "tests/ocr-task-priority.test.mjs",
+        "tests/ocr-task-status-colors.test.mjs",
+        "tests/ocr-team-lead-comments.test.mjs",
+        "tests/ocr-team-lead-workers.test.mjs",
+        "tests/ocr-teamlead-navigation.test.mjs",
+        "tests/ocr-unified-workflow.test.mjs",
+        "tests/ocr-unsaved-changes.test.mjs",
+        "tests/ocr-uploaded-document.test.mjs",
+        "tests/ocr-validation-navigation.test.mjs",
+        "tests/ocr-worker-handoff-pdf.test.mjs",
+        "tests/ocr-worker-save.test.mjs",
+        "tests/ocr-workflow-examples.test.mjs",
+        "tests/organization-directory.test.mjs",
+        "tests/organization-gear-navigation.test.mjs",
+        "tests/organization-reference-lists.test.mjs",
+        "tests/organization-settings-help.test.mjs",
+        "tests/payment-allocation.test.mjs",
+        "tests/payment-table-layout.test.mjs",
+        "tests/performance-regressions.test.mjs",
+        "tests/profile-company-details.test.mjs",
+        "tests/profile-contract-selection.test.mjs",
+        "tests/profile-ocr-settings.test.mjs",
+        "tests/profile-sharing.test.mjs",
+        "tests/reconciliation-combined-view.test.mjs",
+        "tests/reconciliation-correction.test.mjs",
+        "tests/reconciliation-examples.test.mjs",
+        "tests/reconciliation-gl-dialog.test.mjs",
+        "tests/reconciliation-gl-entry-ui.test.mjs",
+        "tests/reconciliation-gl-suggestions.test.mjs",
+        "tests/reconciliation-journal.test.mjs",
+        "tests/reconciliation-match-dialog.test.mjs",
+        "tests/reconciliation-missing-document.test.mjs",
+        "tests/reconciliation-payment-purpose.test.mjs",
+        "tests/reconciliation-presentation.test.mjs",
+        "tests/reconciliation-received-dialog.test.mjs",
+        "tests/reconciliation.test.mjs",
+        "tests/record-lifecycle.test.mjs",
+        "tests/related-object-link.test.mjs",
+        "tests/related-objects.test.mjs",
+        "tests/row-action-layout.test.mjs",
+        "tests/saas-administration.test.mjs",
+        "tests/scrollbar-design.test.mjs",
+        "tests/scrollbar-sync.test.mjs",
+        "tests/settings-design.test.mjs",
+        "tests/system-tooltip.test.mjs",
+        "tests/table-action-layout.test.mjs",
+        "tests/table-footer-position.test.mjs",
+        "tests/table-selection.test.mjs",
+        "tests/task-creation.test.mjs",
+        "tests/task-permissions.test.mjs",
+        "tests/task-provenance.test.mjs",
+        "tests/task-reminder-runtime.test.mjs",
+        "tests/task-schedule.test.mjs",
+        "tests/uploaded-all-statuses.test.mjs",
+        "tests/uploaded-document-actions.test.mjs",
+        "tests/uploaded-document-source.test.mjs",
+        "tests/v24-workspace-layout.test.mjs",
+        "tests/warehouse.test.mjs",
+        "tests/workspace-expansion.test.mjs",
+        "tests/workspace-mode.test.mjs"
+      ],
+      "testFileCount": 218,
+      "testFiles": [
+        "tests/activity-log.test.mjs",
+        "tests/admin-controls.test.mjs",
+        "tests/advance-employee.test.mjs",
+        "tests/balance-confirmation.test.mjs",
+        "tests/bank-matching-demo.test.mjs",
+        "tests/bank-processing-status.test.mjs",
+        "tests/bank-transaction-creation.test.mjs",
+        "tests/bank-transaction.test.mjs",
+        "tests/cash.test.mjs",
+        "tests/chat-notification-example.test.mjs",
+        "tests/chat-notifications.test.mjs",
+        "tests/column-settings-groups.test.mjs",
+        "tests/companies-bulk-actions.test.mjs",
+        "tests/companies-header-actions.test.mjs",
+        "tests/company-bank-account-display.test.mjs",
+        "tests/company-bank-amounts.test.mjs",
+        "tests/company-bank-columns.test.mjs",
+        "tests/company-bank-editing.test.mjs",
+        "tests/company-bank-setup.test.mjs",
+        "tests/company-chart-of-accounts.test.mjs",
+        "tests/company-counterparty-actions.test.mjs",
+        "tests/company-counterparty-import.test.mjs",
+        "tests/company-debts-navigation.test.mjs",
+        "tests/company-digitization-settings.test.mjs",
+        "tests/company-expense-import.test.mjs",
+        "tests/company-menu-toggle.test.mjs",
+        "tests/company-payments.test.mjs",
+        "tests/company-saas.test.mjs",
+        "tests/company-settings-navigation.test.mjs",
+        "tests/company-substitutions.test.mjs",
+        "tests/contract-pricing.test.mjs",
+        "tests/contract-settings.test.mjs",
+        "tests/dashboard-ocr-notifications.test.mjs",
+        "tests/debt-actions.test.mjs",
+        "tests/debt-details.test.mjs",
+        "tests/debt-overdue-columns.test.mjs",
+        "tests/delete-buttons-lifecycle.test.mjs",
+        "tests/demo-chat.test.mjs",
+        "tests/directory-lifecycle.test.mjs",
+        "tests/document-access-identity.test.mjs",
+        "tests/document-accounting-export.test.mjs",
+        "tests/document-accounting-requirements.test.mjs",
+        "tests/document-action-history.test.mjs",
+        "tests/document-actions-menu.test.mjs",
+        "tests/document-approval.test.mjs",
+        "tests/document-archive.test.mjs",
+        "tests/document-bulk-assignment.test.mjs",
+        "tests/document-detail-editing.test.mjs",
+        "tests/document-detailed-digitization.test.mjs",
+        "tests/document-direct-delivery.test.mjs",
+        "tests/document-dropdowns.test.mjs",
+        "tests/document-editor-chat.test.mjs",
+        "tests/document-export.test.mjs",
+        "tests/document-field-alignment.test.mjs",
+        "tests/document-inline-editing.test.mjs",
+        "tests/document-inline-field-design.test.mjs",
+        "tests/document-issue-conversation.test.mjs",
+        "tests/document-issue-fix.test.mjs",
+        "tests/document-issue-table.test.mjs",
+        "tests/document-issues.test.mjs",
+        "tests/document-number.test.mjs",
+        "tests/document-organization-assignment.test.mjs",
+        "tests/document-preview.test.mjs",
+        "tests/document-processing-status.test.mjs",
+        "tests/document-purpose-catalog.test.mjs",
+        "tests/document-receipt-classification.test.mjs",
+        "tests/document-register-editor-actions.test.mjs",
+        "tests/document-register-menu.test.mjs",
+        "tests/document-responsible-users.test.mjs",
+        "tests/document-row-actions.test.mjs",
+        "tests/document-storno.test.mjs",
+        "tests/document-test-delivery.test.mjs",
+        "tests/document-testing-examples.test.mjs",
+        "tests/document-type-catalog.test.mjs",
+        "tests/document-type-navigation.test.mjs",
+        "tests/document-type-validation.test.mjs",
+        "tests/dropdown-behavior.test.mjs",
+        "tests/export-format-schemas.test.mjs",
+        "tests/external-role-user-status.test.mjs",
+        "tests/financial-statement-items.test.mjs",
+        "tests/financial-statement-language.test.mjs",
+        "tests/fixed-asset-examples.test.mjs",
+        "tests/fixed-asset-store.test.mjs",
+        "tests/fixed-assets.test.mjs",
+        "tests/general-ledger-usage.test.mjs",
+        "tests/general-reference-catalogs.test.mjs",
+        "tests/gl-journal-closing.test.mjs",
+        "tests/gl-journal-drafts.test.mjs",
+        "tests/gl-journal-extended.test.mjs",
+        "tests/gl-journal-revaluation.test.mjs",
+        "tests/gl-journal-source.test.mjs",
+        "tests/gl-journal.test.mjs",
+        "tests/global-document-actions.test.mjs",
+        "tests/global-document-amount-display.test.mjs",
+        "tests/global-document-column-layout.test.mjs",
+        "tests/global-document-navigation.test.mjs",
+        "tests/global-document-organizations.test.mjs",
+        "tests/global-document-settings.test.mjs",
+        "tests/help-center.test.mjs",
+        "tests/help-content.test.mjs",
+        "tests/help-user-guides.test.mjs",
+        "tests/important-notifications.test.mjs",
+        "tests/integrations-help.test.mjs",
+        "tests/invoice-creation.test.mjs",
+        "tests/keyboard-navigation.test.mjs",
+        "tests/language.test.mjs",
+        "tests/latvian-integrations.test.mjs",
+        "tests/manual-reconciliation.test.mjs",
+        "tests/neutral-demo-names.test.mjs",
+        "tests/notification-attention.test.mjs",
+        "tests/notification-bell.test.mjs",
+        "tests/notification-chat-navigation.test.mjs",
+        "tests/notification-details-panel.test.mjs",
+        "tests/notification-module-types.test.mjs",
+        "tests/notification-object-examples.test.mjs",
+        "tests/notification-organization-scope.test.mjs",
+        "tests/notification-presentation.test.mjs",
+        "tests/notification-sections.test.mjs",
+        "tests/notification-tab-counts.test.mjs",
+        "tests/ocr-accounting-fields.test.mjs",
+        "tests/ocr-additional-information.test.mjs",
+        "tests/ocr-approval-routing.test.mjs",
+        "tests/ocr-automatic-routing.test.mjs",
+        "tests/ocr-automation-document.test.mjs",
+        "tests/ocr-automation-rules.test.mjs",
+        "tests/ocr-chat-related-objects.test.mjs",
+        "tests/ocr-configured-form.test.mjs",
+        "tests/ocr-document-delivery.test.mjs",
+        "tests/ocr-document-issues-navigation.test.mjs",
+        "tests/ocr-document-rules-layout.test.mjs",
+        "tests/ocr-document-type-editor.test.mjs",
+        "tests/ocr-document-upload.test.mjs",
+        "tests/ocr-editor-layout.test.mjs",
+        "tests/ocr-editor-live-importance.test.mjs",
+        "tests/ocr-editor-workspace.test.mjs",
+        "tests/ocr-field-importance.test.mjs",
+        "tests/ocr-handwriting.test.mjs",
+        "tests/ocr-inbox.test.mjs",
+        "tests/ocr-learning-documents.test.mjs",
+        "tests/ocr-learning-presentation.test.mjs",
+        "tests/ocr-learning-rule-store.test.mjs",
+        "tests/ocr-learning-store.test.mjs",
+        "tests/ocr-learning.test.mjs",
+        "tests/ocr-my-tasks.test.mjs",
+        "tests/ocr-no-accounting-creation.test.mjs",
+        "tests/ocr-original-text-selection.test.mjs",
+        "tests/ocr-party-layout.test.mjs",
+        "tests/ocr-processing-documents.test.mjs",
+        "tests/ocr-purpose-catalog.test.mjs",
+        "tests/ocr-quality-warnings.test.mjs",
+        "tests/ocr-record-lifecycle.test.mjs",
+        "tests/ocr-register-scenarios.test.mjs",
+        "tests/ocr-required-fields.test.mjs",
+        "tests/ocr-review-analytics.test.mjs",
+        "tests/ocr-review-document-view.test.mjs",
+        "tests/ocr-status-lifecycle.test.mjs",
+        "tests/ocr-status-presentation.test.mjs",
+        "tests/ocr-task-columns.test.mjs",
+        "tests/ocr-task-priority.test.mjs",
+        "tests/ocr-task-status-colors.test.mjs",
+        "tests/ocr-team-lead-comments.test.mjs",
+        "tests/ocr-team-lead-workers.test.mjs",
+        "tests/ocr-teamlead-navigation.test.mjs",
+        "tests/ocr-unified-workflow.test.mjs",
+        "tests/ocr-unsaved-changes.test.mjs",
+        "tests/ocr-uploaded-document.test.mjs",
+        "tests/ocr-validation-navigation.test.mjs",
+        "tests/ocr-worker-handoff-pdf.test.mjs",
+        "tests/ocr-worker-save.test.mjs",
+        "tests/ocr-workflow-examples.test.mjs",
+        "tests/organization-directory.test.mjs",
+        "tests/organization-gear-navigation.test.mjs",
+        "tests/organization-reference-lists.test.mjs",
+        "tests/organization-settings-help.test.mjs",
+        "tests/payment-allocation.test.mjs",
+        "tests/payment-table-layout.test.mjs",
+        "tests/performance-regressions.test.mjs",
+        "tests/profile-company-details.test.mjs",
+        "tests/profile-contract-selection.test.mjs",
+        "tests/profile-ocr-settings.test.mjs",
+        "tests/profile-sharing.test.mjs",
+        "tests/reconciliation-combined-view.test.mjs",
+        "tests/reconciliation-correction.test.mjs",
+        "tests/reconciliation-examples.test.mjs",
+        "tests/reconciliation-gl-dialog.test.mjs",
+        "tests/reconciliation-gl-entry-ui.test.mjs",
+        "tests/reconciliation-gl-suggestions.test.mjs",
+        "tests/reconciliation-journal.test.mjs",
+        "tests/reconciliation-match-dialog.test.mjs",
+        "tests/reconciliation-missing-document.test.mjs",
+        "tests/reconciliation-payment-purpose.test.mjs",
+        "tests/reconciliation-presentation.test.mjs",
+        "tests/reconciliation-received-dialog.test.mjs",
+        "tests/reconciliation.test.mjs",
+        "tests/record-lifecycle.test.mjs",
+        "tests/related-object-link.test.mjs",
+        "tests/related-objects.test.mjs",
+        "tests/row-action-layout.test.mjs",
+        "tests/saas-administration.test.mjs",
+        "tests/scrollbar-design.test.mjs",
+        "tests/scrollbar-sync.test.mjs",
+        "tests/settings-design.test.mjs",
+        "tests/system-tooltip.test.mjs",
+        "tests/table-action-layout.test.mjs",
+        "tests/table-footer-position.test.mjs",
+        "tests/table-selection.test.mjs",
+        "tests/task-creation.test.mjs",
+        "tests/task-permissions.test.mjs",
+        "tests/task-provenance.test.mjs",
+        "tests/task-reminder-runtime.test.mjs",
+        "tests/task-schedule.test.mjs",
+        "tests/uploaded-all-statuses.test.mjs",
+        "tests/uploaded-document-actions.test.mjs",
+        "tests/uploaded-document-source.test.mjs",
+        "tests/v24-workspace-layout.test.mjs",
+        "tests/warehouse.test.mjs",
+        "tests/workspace-expansion.test.mjs",
+        "tests/workspace-mode.test.mjs"
+      ],
+      "exitCode": 1,
+      "signal": null,
+      "counts": {
+        "tests": 1929,
+        "suites": 0,
+        "pass": 1725,
+        "fail": 204,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0
+      },
+      "durationMs": 17179.325083,
+      "failureNames": [
+        "editor separates immutable bank facts from editable matching data with an explicit non-algorithm preview",
+        "status persists with audit, without changing invoice approval, bank amounts, posting or other companies",
+        "Bank status uses the shared portalled dropdown and the editor shows the same independent status",
+        "new form is unsaved, company-scoped and defaults to New / Draft without a posting",
+        "manual entry creation validates ownership, fields and balanced allocations",
+        "save creates one bank record with history and retains other records; duplicates and revoked access are rejected",
+        "Bank toolbar uses the system plus action and opens the existing editor in create mode",
+        "statement CSV parses signed values and quoted descriptions, and rejects invalid rows",
+        "statement imports are company-scoped, atomic, deduplicated and leave postings/matching unchanged",
+        "statement action uses system design and opens a reviewable import, not IMPORTDATA history",
+        "bank save rechecks access, company, deletion, state, stale data and immutable source text",
+        "save persists the bank overlay and audit atomically, retaining all source document fields and other companies",
+        "company chart shares the template title, back button, breadcrumbs and toolbar layout with Settings",
+        "account editor uses company-scoped cost center sources and keeps usage flags out of shared template editing",
+        "both Manage company entry points embed the existing company-scoped counterparties register",
+        "tests/delete-buttons-lifecycle.test.mjs",
+        "history loader is read-only, includes retained deletion audits while the register excludes deleted documents",
+        "related-document navigation rechecks rights, company, relation and deletion before opening View",
+        "write command returns the original to Draft with audit and reactivates unresolved issue protection",
+        "fresh scope, permissions, period, transfer, corrections and snapshot are rechecked before cancellation",
+        "ordinary status edits cannot bypass the cancellation workflow",
+        "Actions opens a system confirmation for both imported documents and manual invoices",
+        "save applies only explicit IDs atomically and records who changed each document",
+        "the real bulk save teaches selected documents and keeps accountant values for the next OCR run",
+        "stale selection, changed references or revoked access saves no partial document batch",
+        "single-row export actions persist only that document, retain postings and record history",
+        "bulk save persists all new fields, selected-only and audits original values",
+        "new-field snapshots and fresh company catalogs prevent stale/partial updates",
+        "card command saves corrected fields and authoritative history, without changing company master data",
+        "imported approved card permits corrections without changing the confirmed GL snapshot",
+        "legacy card edits cannot retain a stale responsible user ID after changing the person",
+        "global OCR card corrections neither apply FH Storno locks nor create reverse GL entries",
+        "editing Document Number persists the exact header value without renaming the file or changing series and line codes",
+        "bulk command changes only explicit selected IDs across organizations and keeps a durable per-document audit",
+        "a stale, unauthorized, deleted or manual selection fails before any document is written",
+        "issue correction writes source fields and lines without approval or reversal",
+        "company document header omits Upload document without removing the existing import action",
+        "document information panel contains the upload guidance and the existing Dashboard ADDINFO shortcut",
+        "list separates selected-document transfer from file export and refreshes scope and rights at action time",
+        "export retains the centered system-choice dialog and existing down-arrow design; import still opens uploads",
+        "OCR write persists only source corrections and history, never invokes advance or Storno accounting",
+        "global type dropdown saves a subtype with its parent, audit and no amount/allocation changes",
+        "global type save rechecks removed/inactive settings, access and stale documents",
+        "document purpose updates Purchase / Sale consistently with audit without changing invoice lines",
+        "purpose selection rejects free text, stale inactive options and missing access",
+        "actual write command persists changes and audit; concurrent stale writes cannot overwrite them",
+        "actual command rechecks organization, permission, allocation count and document status",
+        "approved document inline edits retain posting snapshots and record the change; warning excludes ordinary Processing",
+        "all requested document fields persist independently of allocation count with audit",
+        "responsible person selection preserves a stable internal user identity and supports clearing",
+        "responsible person rejects arbitrary text, external IDs and users disabled after opening the dropdown",
+        "text and select edits opt into the same frame without changing permissions or other screens",
+        "text edit retains its exact width and height when the input replaces its display",
+        "actual adapter persists two-sided replies and audit without changing document data or another document",
+        "actual adapter rejects revoked scope, view-only writes, Worker impersonation and stale organization",
+        "concurrent replies are serialized and retry does not append another message or audit event",
+        "Fix issue saves corrections and audit, then returns the document to OCR without releasing approval",
+        "failed or rejected save never fixes the report or navigates",
+        "revoked worker permission retains saved corrections but does not release or navigate",
+        "already-saved corrections can be queued; other reports remain open and duplicate hand-offs are idempotent",
+        "UI replaces Report issue only in issue editing and keeps the Document issues route mounted",
+        "successful Fix issue closes the document and refreshes the current list without resetting filters or navigating",
+        "queued corrections do not appear as ready-to-approve OCR documents",
+        "actual adapter blocks bulk transfers atomically, and stale upserts cannot erase issue state",
+        "actual commands recheck worker permissions, organization scope and document identity",
+        "report, correction, OCR hand-off and reload retain exact audit; reported documents cannot be removed",
+        "concurrent reports and updates preserve all documents and both reports",
+        "unreadable document storage fails closed instead of dropping report history",
+        "company and global Documents use the full saved Document Number, including series and leading zeroes",
+        "card save and all registers stay connected to the same persisted number field",
+        "assignment atomically persists organization and audit without rewriting OCR values, company master or GL",
+        "command rechecks organization rights and serializes concurrent assignments",
+        "list, status filter, create and copy use shared processing states without changing historical data",
+        "renamed purpose catalog keeps Service, Product, Code and reads current settings labels",
+        "saving and reopening retains receipt/subtype and audit without changing accounting, amounts, OCR status or other documents",
+        "single delete removes only the chosen unconfirmed document from registers and preserves its original data",
+        "Restore retains original status, data, OCR/issues and deletion history across reload and repeated cycles",
+        "Restore rechecks company, permissions and deletion identity and cannot be forged through updates",
+        "Draft deletion is allowed after creation, editing, reporting and linking, without removing that history",
+        "deleted documents cannot be edited, reinserted or resurrected by stale form writes",
+        "concurrent delete requests cannot record the same deletion twice",
+        "correction command persists a linked draft and audit, never alters original, and rejects duplicate/stale/locked/revoked actions",
+        "row uses the detail Storno form, a single final contextual icon, and equal header/row action widths",
+        "register has one-click Reversed filter, read-only derived status and original-plus-Storno amount presentation",
+        "actual write boundary stores only test document Storno and audit, preserves GL and rejects concurrent duplicates",
+        "adapter saves without linked GL and reversed documents cannot be erased or edited through ordinary writes",
+        "write boundary rechecks company scope and permissions without partial writes",
+        "write boundary rejects a document whose current status is no longer approved",
+        "adapter persists results and history, survives reload, and deduplicates double-click/concurrent retries",
+        "a rejected test can be retried successfully while retaining both attempts and immutable source records",
+        "sending from All Documents approves only accepted documents in the same company without copying or posting GL",
+        "failed global sending never approves and receipt replays cannot change approval context",
+        "adapter rechecks permissions, selection, destination and concurrent source data before writing any results",
+        "destination is saved immediately per company without transferring documents or replacing company settings",
+        "direct send rechecks Primary export format under the write lock and leaves obsolete destination settings untouched",
+        "invalid or unavailable Primary export formats never create receipts or switch to old preferences",
+        "destination persistence checks fresh permissions and integration availability",
+        "queued destination changes keep the latest choice and preserve independent companies",
+        "examples test allocation counts independently of product counts and keep protected states locked",
+        "tests/document-type-navigation.test.mjs",
+        "tests/document-type-validation.test.mjs",
+        "new logins and reloaded sessions deny deactivated external users, including the demo persona",
+        "tests/financial-statement-language.test.mjs",
+        "journal toolbar keeps column grouping while removing the requested controls",
+        "VAT closing is period-only; email controls belong to the separate reconciliation action",
+        "GL account bulk selection is opt-in, respects search and does not close the menu",
+        "journal uses canonical accounting allocations, not OCR/product lines, without mutating either",
+        "older source documents retain line and header account fallbacks and localized amounts",
+        "edit routes source documents to their existing card and keeps journal drafts in their own editor",
+        "a save through the shared document command updates the same record, journal projection and history",
+        "opening from the journal cannot bypass approval, posted-operation or company boundaries",
+        "global Documents has Edit, Delete and ellipsis; issue reporting is in the menu and row Send is absent",
+        "global Delete does not expose accounting corrections and respects approval / access restrictions",
+        "deleted global documents replace Delete with Restore and disable other row actions",
+        "company Documents hides report/send and always displays Delete, disabled for confirmed documents",
+        "the separate Invoices views retain their existing full actions",
+        "global register returns all accessible companies, not the current company",
+        "company register retains company-only scope and global Invoices retains classification",
+        "the global register opens the existing company-scoped form without navigating or resetting selection",
+        "credit selector uses the system dropdown, company-scoped load, and appears only for credit invoices",
+        "rendered totals contain one main summary and only a foreign-currency extra total",
+        "sales manager and document analytics persist separately; purchases omit sales-only metadata",
+        "additional and attachments start collapsed, with one notes field, sales-only fields and preview controls",
+        "Summary metadata persists separately from description and invoice series, including line-level responsible users",
+        "line responsible person inherits the document default, permits explicit clearing and rejects inactive or unknown users",
+        "optional discount inputs persist their totals for invoices, credit notes and Summary allocations",
+        "saving persists each line description and VAT-in-debt choice, including explicit false",
+        "Invoice lines uses one editable table without Summary / Quantity switches and keeps existing controls",
+        "Split uses a compact aligned table with a fixed allocation column for any number of lines",
+        "V23 manual source captures the creator name and role, including copied invoices",
+        "V23 manual advance assignment persists employee and subtype without inventing a posting",
+        "V23 batch assignment is atomic and rechecks selection, snapshots and company contacts",
+        "V23 imported document subtype and note persist with history and reject obsolete OCR choices",
+        "saving a credit-note draft preserves original, records link/reason/audit, and is idempotent",
+        "Documents row and both editor Actions route credit notes directly to the shared invoice form",
+        "legacy credit sources retain their counterparty snapshot without creating or modifying master data",
+        "saving a copy creates a new Manual invoice and audit, leaving source, posting and source history unchanged",
+        "only Create invoice origin enables Copy; imported, OCR and manually uploaded files cannot be copied even by a stale command",
+        "manual approved invoices are editable with original posting and transfer history preserved",
+        "manual invoice edit persists in the same register record with retained issue history, creation metadata and no GL write",
+        "manual invoice edit rechecks permission, company, origin, locked state, unresolved issues and concurrent writes",
+        "invoice adapter validates the fresh credit source, persists its ID and leaves original documents unchanged",
+        "creating line types persists the shared Type catalog, avoids duplicates and preserves legacy references",
+        "creating types rechecks permissions, company and storage without overwriting existing references",
+        "custom line types save into both Quantity and Summary and are checked against fresh company options",
+        "free-text Code / Name persists in Quantity and Summary without changing accounting values",
+        "save command adds one shared-register invoice and history, is idempotent and leaves other documents intact",
+        "save persists two Summary allocations for one Quantity line and rejects unmatched allocations atomically",
+        "new invoice status is selected, persisted and audited without claiming payment, posting or transfer",
+        "invoice header has a system status dropdown and save label follows the selected status",
+        "save rechecks current permissions, company, counterparty and internal-user status and handles storage failure",
+        "Invoices owns creation UI; the shared Documents register retains classification and access filtering",
+        "Create invoice uses the shared system Back button and preserves save-time disabling",
+        "Accounting defaults starts expanded and contains only the four requested system fields",
+        "save re-reads OCR types and rejects removed, deactivated or wrong-group selections",
+        "dashboard upload, summary cards and company action labels have Lithuanian translations",
+        "status labels are separate from actions, preserve custom values and never mutate stored data",
+        "language preference persists independently and round-trips without record writes",
+        "company overview translates every chart, VAT label, month and helper",
+        "reconciliation localizes enums and notices but preserves document and payment data",
+        "warehouse stock labels, choices and validation messages translate without changing record values",
+        "ADDINFO shortcut help is translated and retains both keyboard combinations",
+        "notification chat opens inside the normal shell and Back retains the notification subtree and scroll",
+        "explicit Chats sidebar navigation exits the notification detour and opens the normal Chats view",
+        "opening a chat document and returning preserves the chat and its notification return path",
+        "opening a related chat still rechecks current chat access before navigating",
+        "tests/notification-details-panel.test.mjs",
+        "the actual completion handler validates, persists the route, and hands off without a review loop",
+        "TeamLead cannot forward to itself; shared OCR editor reserves more width for data entry",
+        "the real completion boundary persists configured values, parties and lines and still enforces required data",
+        "tests/ocr-document-delivery.test.mjs",
+        "read-only workflow reuses document extraction layout and guards writes and work-time logging",
+        "competing values are attached to their own learning record with supplier and field context",
+        "help is an icon-only Dashboard-style popup and the worker queue shortcut is removed",
+        "review integration teaches only confirmed documents and waits before opening the next",
+        "My tasks, TeamLead and worker Runs share the catalog table; issues uses the same resolver",
+        "built-in OCR rules are deactivated, visible in settings, and excluded from processing",
+        "unused custom OCR rules delete while linked custom rules remain inactive",
+        "both lists resolve descriptions from the specific OCR substatus without changing records",
+        "send opens the system dialog; comments are visible above extraction and in the TeamLead list",
+        "OCR save boundary revalidates access, stale workflow and required fields before writing",
+        "explicit TeamLead referral may carry incomplete fields, approval may not",
+        "single-company sidebar has no All organizations control and retains selection",
+        "OCR and company menus use Uploaded document without changing their route identifiers",
+        "settings tabs preserve the mounted digitization form and use the organization ID for both lists",
+        "the three system tabs are visible only for an organization, not for an unrelated counterparty",
+        "notification session remains stable on unrelated renders and re-resolves changed access",
+        "tests/reconciliation-gl-dialog.test.mjs",
+        "linked rows label each document side without inventing GL account codes",
+        "tests/related-object-link.test.mjs",
+        "different records with identical labels stay independently selectable",
+        "navigation is administrator-only and profile reuses company layout without company identity",
+        "Status and OCR status use the shared system connector and keep independent navigation",
+        "organization dialog groups five company settings with shared dropdowns and one action row",
+        "OCR statuses use document-type navigation with a separate substatus list",
+        "group search and each substatus list have independent filters and navigation state",
+        "Processing substatus labels and rows are plain text; only the Edit icon opens the editor",
+        "tests/task-permissions.test.mjs",
+        "Uploaded documents shows all OCR states by default, including older processed and approved documents",
+        "group and substatus filters narrow all-status register without changing records",
+        "explicit date, organization and search filters still apply to completed documents",
+        "serialized bulk command touches selected IDs only and retains durable audit",
+        "stale mixed selections and revoked rights cannot partially write",
+        "actual row and header JSX stay aligned after restoring source-first column order"
+      ],
+      "failures": [
+        {
+          "name": "editor separates immutable bank facts from editable matching data with an explicit non-algorithm preview",
+          "depth": 0,
+          "tapNumber": 33
+        },
+        {
+          "name": "status persists with audit, without changing invoice approval, bank amounts, posting or other companies",
+          "depth": 0,
+          "tapNumber": 36
+        },
+        {
+          "name": "Bank status uses the shared portalled dropdown and the editor shows the same independent status",
+          "depth": 0,
+          "tapNumber": 37
+        },
+        {
+          "name": "new form is unsaved, company-scoped and defaults to New / Draft without a posting",
+          "depth": 0,
+          "tapNumber": 38
+        },
+        {
+          "name": "manual entry creation validates ownership, fields and balanced allocations",
+          "depth": 0,
+          "tapNumber": 39
+        },
+        {
+          "name": "save creates one bank record with history and retains other records; duplicates and revoked access are rejected",
+          "depth": 0,
+          "tapNumber": 40
+        },
+        {
+          "name": "Bank toolbar uses the system plus action and opens the existing editor in create mode",
+          "depth": 0,
+          "tapNumber": 41
+        },
+        {
+          "name": "statement CSV parses signed values and quoted descriptions, and rejects invalid rows",
+          "depth": 0,
+          "tapNumber": 42
+        },
+        {
+          "name": "statement imports are company-scoped, atomic, deduplicated and leave postings/matching unchanged",
+          "depth": 0,
+          "tapNumber": 43
+        },
+        {
+          "name": "statement action uses system design and opens a reviewable import, not IMPORTDATA history",
+          "depth": 0,
+          "tapNumber": 44
+        },
+        {
+          "name": "bank save rechecks access, company, deletion, state, stale data and immutable source text",
+          "depth": 0,
+          "tapNumber": 49
+        },
+        {
+          "name": "save persists the bank overlay and audit atomically, retaining all source document fields and other companies",
+          "depth": 0,
+          "tapNumber": 54
+        },
+        {
+          "name": "company chart shares the template title, back button, breadcrumbs and toolbar layout with Settings",
+          "depth": 0,
+          "tapNumber": 135
+        },
+        {
+          "name": "account editor uses company-scoped cost center sources and keeps usage flags out of shared template editing",
+          "depth": 0,
+          "tapNumber": 140
+        },
+        {
+          "name": "both Manage company entry points embed the existing company-scoped counterparties register",
+          "depth": 0,
+          "tapNumber": 202
+        },
+        {
+          "name": "tests/delete-buttons-lifecycle.test.mjs",
+          "depth": 0,
+          "tapNumber": 37
+        },
+        {
+          "name": "history loader is read-only, includes retained deletion audits while the register excludes deleted documents",
+          "depth": 0,
+          "tapNumber": 308
+        },
+        {
+          "name": "related-document navigation rechecks rights, company, relation and deletion before opening View",
+          "depth": 0,
+          "tapNumber": 309
+        },
+        {
+          "name": "write command returns the original to Draft with audit and reactivates unresolved issue protection",
+          "depth": 0,
+          "tapNumber": 319
+        },
+        {
+          "name": "fresh scope, permissions, period, transfer, corrections and snapshot are rechecked before cancellation",
+          "depth": 0,
+          "tapNumber": 320
+        },
+        {
+          "name": "ordinary status edits cannot bypass the cancellation workflow",
+          "depth": 0,
+          "tapNumber": 321
+        },
+        {
+          "name": "Actions opens a system confirmation for both imported documents and manual invoices",
+          "depth": 0,
+          "tapNumber": 322
+        },
+        {
+          "name": "save applies only explicit IDs atomically and records who changed each document",
+          "depth": 0,
+          "tapNumber": 339
+        },
+        {
+          "name": "the real bulk save teaches selected documents and keeps accountant values for the next OCR run",
+          "depth": 0,
+          "tapNumber": 340
+        },
+        {
+          "name": "stale selection, changed references or revoked access saves no partial document batch",
+          "depth": 0,
+          "tapNumber": 341
+        },
+        {
+          "name": "single-row export actions persist only that document, retain postings and record history",
+          "depth": 0,
+          "tapNumber": 347
+        },
+        {
+          "name": "bulk save persists all new fields, selected-only and audits original values",
+          "depth": 0,
+          "tapNumber": 348
+        },
+        {
+          "name": "new-field snapshots and fresh company catalogs prevent stale/partial updates",
+          "depth": 0,
+          "tapNumber": 349
+        },
+        {
+          "name": "card command saves corrected fields and authoritative history, without changing company master data",
+          "depth": 0,
+          "tapNumber": 356
+        },
+        {
+          "name": "imported approved card permits corrections without changing the confirmed GL snapshot",
+          "depth": 0,
+          "tapNumber": 357
+        },
+        {
+          "name": "legacy card edits cannot retain a stale responsible user ID after changing the person",
+          "depth": 0,
+          "tapNumber": 358
+        },
+        {
+          "name": "global OCR card corrections neither apply FH Storno locks nor create reverse GL entries",
+          "depth": 0,
+          "tapNumber": 359
+        },
+        {
+          "name": "editing Document Number persists the exact header value without renaming the file or changing series and line codes",
+          "depth": 0,
+          "tapNumber": 360
+        },
+        {
+          "name": "bulk command changes only explicit selected IDs across organizations and keeps a durable per-document audit",
+          "depth": 0,
+          "tapNumber": 364
+        },
+        {
+          "name": "a stale, unauthorized, deleted or manual selection fails before any document is written",
+          "depth": 0,
+          "tapNumber": 365
+        },
+        {
+          "name": "issue correction writes source fields and lines without approval or reversal",
+          "depth": 0,
+          "tapNumber": 381
+        },
+        {
+          "name": "company document header omits Upload document without removing the existing import action",
+          "depth": 0,
+          "tapNumber": 385
+        },
+        {
+          "name": "document information panel contains the upload guidance and the existing Dashboard ADDINFO shortcut",
+          "depth": 0,
+          "tapNumber": 386
+        },
+        {
+          "name": "list separates selected-document transfer from file export and refreshes scope and rights at action time",
+          "depth": 0,
+          "tapNumber": 396
+        },
+        {
+          "name": "export retains the centered system-choice dialog and existing down-arrow design; import still opens uploads",
+          "depth": 0,
+          "tapNumber": 397
+        },
+        {
+          "name": "OCR write persists only source corrections and history, never invokes advance or Storno accounting",
+          "depth": 0,
+          "tapNumber": 413
+        },
+        {
+          "name": "global type dropdown saves a subtype with its parent, audit and no amount/allocation changes",
+          "depth": 0,
+          "tapNumber": 415
+        },
+        {
+          "name": "global type save rechecks removed/inactive settings, access and stale documents",
+          "depth": 0,
+          "tapNumber": 416
+        },
+        {
+          "name": "document purpose updates Purchase / Sale consistently with audit without changing invoice lines",
+          "depth": 0,
+          "tapNumber": 417
+        },
+        {
+          "name": "purpose selection rejects free text, stale inactive options and missing access",
+          "depth": 0,
+          "tapNumber": 418
+        },
+        {
+          "name": "actual write command persists changes and audit; concurrent stale writes cannot overwrite them",
+          "depth": 0,
+          "tapNumber": 419
+        },
+        {
+          "name": "actual command rechecks organization, permission, allocation count and document status",
+          "depth": 0,
+          "tapNumber": 420
+        },
+        {
+          "name": "approved document inline edits retain posting snapshots and record the change; warning excludes ordinary Processing",
+          "depth": 0,
+          "tapNumber": 421
+        },
+        {
+          "name": "all requested document fields persist independently of allocation count with audit",
+          "depth": 0,
+          "tapNumber": 423
+        },
+        {
+          "name": "responsible person selection preserves a stable internal user identity and supports clearing",
+          "depth": 0,
+          "tapNumber": 424
+        },
+        {
+          "name": "responsible person rejects arbitrary text, external IDs and users disabled after opening the dropdown",
+          "depth": 0,
+          "tapNumber": 425
+        },
+        {
+          "name": "text and select edits opt into the same frame without changing permissions or other screens",
+          "depth": 0,
+          "tapNumber": 427
+        },
+        {
+          "name": "text edit retains its exact width and height when the input replaces its display",
+          "depth": 0,
+          "tapNumber": 428
+        },
+        {
+          "name": "actual adapter persists two-sided replies and audit without changing document data or another document",
+          "depth": 0,
+          "tapNumber": 436
+        },
+        {
+          "name": "actual adapter rejects revoked scope, view-only writes, Worker impersonation and stale organization",
+          "depth": 0,
+          "tapNumber": 437
+        },
+        {
+          "name": "concurrent replies are serialized and retry does not append another message or audit event",
+          "depth": 0,
+          "tapNumber": 438
+        },
+        {
+          "name": "Fix issue saves corrections and audit, then returns the document to OCR without releasing approval",
+          "depth": 0,
+          "tapNumber": 441
+        },
+        {
+          "name": "failed or rejected save never fixes the report or navigates",
+          "depth": 0,
+          "tapNumber": 442
+        },
+        {
+          "name": "revoked worker permission retains saved corrections but does not release or navigate",
+          "depth": 0,
+          "tapNumber": 443
+        },
+        {
+          "name": "already-saved corrections can be queued; other reports remain open and duplicate hand-offs are idempotent",
+          "depth": 0,
+          "tapNumber": 444
+        },
+        {
+          "name": "UI replaces Report issue only in issue editing and keeps the Document issues route mounted",
+          "depth": 0,
+          "tapNumber": 445
+        },
+        {
+          "name": "successful Fix issue closes the document and refreshes the current list without resetting filters or navigating",
+          "depth": 0,
+          "tapNumber": 446
+        },
+        {
+          "name": "queued corrections do not appear as ready-to-approve OCR documents",
+          "depth": 0,
+          "tapNumber": 466
+        },
+        {
+          "name": "actual adapter blocks bulk transfers atomically, and stale upserts cannot erase issue state",
+          "depth": 0,
+          "tapNumber": 467
+        },
+        {
+          "name": "actual commands recheck worker permissions, organization scope and document identity",
+          "depth": 0,
+          "tapNumber": 468
+        },
+        {
+          "name": "report, correction, OCR hand-off and reload retain exact audit; reported documents cannot be removed",
+          "depth": 0,
+          "tapNumber": 469
+        },
+        {
+          "name": "concurrent reports and updates preserve all documents and both reports",
+          "depth": 0,
+          "tapNumber": 470
+        },
+        {
+          "name": "unreadable document storage fails closed instead of dropping report history",
+          "depth": 0,
+          "tapNumber": 471
+        },
+        {
+          "name": "company and global Documents use the full saved Document Number, including series and leading zeroes",
+          "depth": 0,
+          "tapNumber": 473
+        },
+        {
+          "name": "card save and all registers stay connected to the same persisted number field",
+          "depth": 0,
+          "tapNumber": 475
+        },
+        {
+          "name": "assignment atomically persists organization and audit without rewriting OCR values, company master or GL",
+          "depth": 0,
+          "tapNumber": 480
+        },
+        {
+          "name": "command rechecks organization rights and serializes concurrent assignments",
+          "depth": 0,
+          "tapNumber": 481
+        },
+        {
+          "name": "list, status filter, create and copy use shared processing states without changing historical data",
+          "depth": 0,
+          "tapNumber": 492
+        },
+        {
+          "name": "renamed purpose catalog keeps Service, Product, Code and reads current settings labels",
+          "depth": 0,
+          "tapNumber": 493
+        },
+        {
+          "name": "saving and reopening retains receipt/subtype and audit without changing accounting, amounts, OCR status or other documents",
+          "depth": 0,
+          "tapNumber": 499
+        },
+        {
+          "name": "single delete removes only the chosen unconfirmed document from registers and preserves its original data",
+          "depth": 0,
+          "tapNumber": 524
+        },
+        {
+          "name": "Restore retains original status, data, OCR/issues and deletion history across reload and repeated cycles",
+          "depth": 0,
+          "tapNumber": 525
+        },
+        {
+          "name": "Restore rechecks company, permissions and deletion identity and cannot be forged through updates",
+          "depth": 0,
+          "tapNumber": 526
+        },
+        {
+          "name": "Draft deletion is allowed after creation, editing, reporting and linking, without removing that history",
+          "depth": 0,
+          "tapNumber": 527
+        },
+        {
+          "name": "deleted documents cannot be edited, reinserted or resurrected by stale form writes",
+          "depth": 0,
+          "tapNumber": 528
+        },
+        {
+          "name": "concurrent delete requests cannot record the same deletion twice",
+          "depth": 0,
+          "tapNumber": 529
+        },
+        {
+          "name": "correction command persists a linked draft and audit, never alters original, and rejects duplicate/stale/locked/revoked actions",
+          "depth": 0,
+          "tapNumber": 530
+        },
+        {
+          "name": "row uses the detail Storno form, a single final contextual icon, and equal header/row action widths",
+          "depth": 0,
+          "tapNumber": 531
+        },
+        {
+          "name": "register has one-click Reversed filter, read-only derived status and original-plus-Storno amount presentation",
+          "depth": 0,
+          "tapNumber": 542
+        },
+        {
+          "name": "actual write boundary stores only test document Storno and audit, preserves GL and rejects concurrent duplicates",
+          "depth": 0,
+          "tapNumber": 551
+        },
+        {
+          "name": "adapter saves without linked GL and reversed documents cannot be erased or edited through ordinary writes",
+          "depth": 0,
+          "tapNumber": 552
+        },
+        {
+          "name": "write boundary rechecks company scope and permissions without partial writes",
+          "depth": 0,
+          "tapNumber": 553
+        },
+        {
+          "name": "write boundary rejects a document whose current status is no longer approved",
+          "depth": 0,
+          "tapNumber": 554
+        },
+        {
+          "name": "adapter persists results and history, survives reload, and deduplicates double-click/concurrent retries",
+          "depth": 0,
+          "tapNumber": 562
+        },
+        {
+          "name": "a rejected test can be retried successfully while retaining both attempts and immutable source records",
+          "depth": 0,
+          "tapNumber": 563
+        },
+        {
+          "name": "sending from All Documents approves only accepted documents in the same company without copying or posting GL",
+          "depth": 0,
+          "tapNumber": 564
+        },
+        {
+          "name": "failed global sending never approves and receipt replays cannot change approval context",
+          "depth": 0,
+          "tapNumber": 565
+        },
+        {
+          "name": "adapter rechecks permissions, selection, destination and concurrent source data before writing any results",
+          "depth": 0,
+          "tapNumber": 566
+        },
+        {
+          "name": "destination is saved immediately per company without transferring documents or replacing company settings",
+          "depth": 0,
+          "tapNumber": 567
+        },
+        {
+          "name": "direct send rechecks Primary export format under the write lock and leaves obsolete destination settings untouched",
+          "depth": 0,
+          "tapNumber": 568
+        },
+        {
+          "name": "invalid or unavailable Primary export formats never create receipts or switch to old preferences",
+          "depth": 0,
+          "tapNumber": 569
+        },
+        {
+          "name": "destination persistence checks fresh permissions and integration availability",
+          "depth": 0,
+          "tapNumber": 570
+        },
+        {
+          "name": "queued destination changes keep the latest choice and preserve independent companies",
+          "depth": 0,
+          "tapNumber": 571
+        },
+        {
+          "name": "examples test allocation counts independently of product counts and keep protected states locked",
+          "depth": 0,
+          "tapNumber": 575
+        },
+        {
+          "name": "tests/document-type-navigation.test.mjs",
+          "depth": 0,
+          "tapNumber": 75
+        },
+        {
+          "name": "tests/document-type-validation.test.mjs",
+          "depth": 0,
+          "tapNumber": 76
+        },
+        {
+          "name": "new logins and reloaded sessions deny deactivated external users, including the demo persona",
+          "depth": 0,
+          "tapNumber": 618
+        },
+        {
+          "name": "tests/financial-statement-language.test.mjs",
+          "depth": 0,
+          "tapNumber": 81
+        },
+        {
+          "name": "journal toolbar keeps column grouping while removing the requested controls",
+          "depth": 0,
+          "tapNumber": 703
+        },
+        {
+          "name": "VAT closing is period-only; email controls belong to the separate reconciliation action",
+          "depth": 0,
+          "tapNumber": 704
+        },
+        {
+          "name": "GL account bulk selection is opt-in, respects search and does not close the menu",
+          "depth": 0,
+          "tapNumber": 754
+        },
+        {
+          "name": "journal uses canonical accounting allocations, not OCR/product lines, without mutating either",
+          "depth": 0,
+          "tapNumber": 755
+        },
+        {
+          "name": "older source documents retain line and header account fallbacks and localized amounts",
+          "depth": 0,
+          "tapNumber": 756
+        },
+        {
+          "name": "edit routes source documents to their existing card and keeps journal drafts in their own editor",
+          "depth": 0,
+          "tapNumber": 757
+        },
+        {
+          "name": "a save through the shared document command updates the same record, journal projection and history",
+          "depth": 0,
+          "tapNumber": 758
+        },
+        {
+          "name": "opening from the journal cannot bypass approval, posted-operation or company boundaries",
+          "depth": 0,
+          "tapNumber": 759
+        },
+        {
+          "name": "global Documents has Edit, Delete and ellipsis; issue reporting is in the menu and row Send is absent",
+          "depth": 0,
+          "tapNumber": 772
+        },
+        {
+          "name": "global Delete does not expose accounting corrections and respects approval / access restrictions",
+          "depth": 0,
+          "tapNumber": 773
+        },
+        {
+          "name": "deleted global documents replace Delete with Restore and disable other row actions",
+          "depth": 0,
+          "tapNumber": 774
+        },
+        {
+          "name": "company Documents hides report/send and always displays Delete, disabled for confirmed documents",
+          "depth": 0,
+          "tapNumber": 775
+        },
+        {
+          "name": "the separate Invoices views retain their existing full actions",
+          "depth": 0,
+          "tapNumber": 776
+        },
+        {
+          "name": "global register returns all accessible companies, not the current company",
+          "depth": 0,
+          "tapNumber": 791
+        },
+        {
+          "name": "company register retains company-only scope and global Invoices retains classification",
+          "depth": 0,
+          "tapNumber": 792
+        },
+        {
+          "name": "the global register opens the existing company-scoped form without navigating or resetting selection",
+          "depth": 0,
+          "tapNumber": 804
+        },
+        {
+          "name": "credit selector uses the system dropdown, company-scoped load, and appears only for credit invoices",
+          "depth": 0,
+          "tapNumber": 850
+        },
+        {
+          "name": "rendered totals contain one main summary and only a foreign-currency extra total",
+          "depth": 0,
+          "tapNumber": 856
+        },
+        {
+          "name": "sales manager and document analytics persist separately; purchases omit sales-only metadata",
+          "depth": 0,
+          "tapNumber": 858
+        },
+        {
+          "name": "additional and attachments start collapsed, with one notes field, sales-only fields and preview controls",
+          "depth": 0,
+          "tapNumber": 859
+        },
+        {
+          "name": "Summary metadata persists separately from description and invoice series, including line-level responsible users",
+          "depth": 0,
+          "tapNumber": 865
+        },
+        {
+          "name": "line responsible person inherits the document default, permits explicit clearing and rejects inactive or unknown users",
+          "depth": 0,
+          "tapNumber": 866
+        },
+        {
+          "name": "optional discount inputs persist their totals for invoices, credit notes and Summary allocations",
+          "depth": 0,
+          "tapNumber": 869
+        },
+        {
+          "name": "saving persists each line description and VAT-in-debt choice, including explicit false",
+          "depth": 0,
+          "tapNumber": 873
+        },
+        {
+          "name": "Invoice lines uses one editable table without Summary / Quantity switches and keeps existing controls",
+          "depth": 0,
+          "tapNumber": 878
+        },
+        {
+          "name": "Split uses a compact aligned table with a fixed allocation column for any number of lines",
+          "depth": 0,
+          "tapNumber": 879
+        },
+        {
+          "name": "V23 manual source captures the creator name and role, including copied invoices",
+          "depth": 0,
+          "tapNumber": 885
+        },
+        {
+          "name": "V23 manual advance assignment persists employee and subtype without inventing a posting",
+          "depth": 0,
+          "tapNumber": 886
+        },
+        {
+          "name": "V23 batch assignment is atomic and rechecks selection, snapshots and company contacts",
+          "depth": 0,
+          "tapNumber": 887
+        },
+        {
+          "name": "V23 imported document subtype and note persist with history and reject obsolete OCR choices",
+          "depth": 0,
+          "tapNumber": 888
+        },
+        {
+          "name": "saving a credit-note draft preserves original, records link/reason/audit, and is idempotent",
+          "depth": 0,
+          "tapNumber": 892
+        },
+        {
+          "name": "Documents row and both editor Actions route credit notes directly to the shared invoice form",
+          "depth": 0,
+          "tapNumber": 893
+        },
+        {
+          "name": "legacy credit sources retain their counterparty snapshot without creating or modifying master data",
+          "depth": 0,
+          "tapNumber": 894
+        },
+        {
+          "name": "saving a copy creates a new Manual invoice and audit, leaving source, posting and source history unchanged",
+          "depth": 0,
+          "tapNumber": 897
+        },
+        {
+          "name": "only Create invoice origin enables Copy; imported, OCR and manually uploaded files cannot be copied even by a stale command",
+          "depth": 0,
+          "tapNumber": 899
+        },
+        {
+          "name": "manual approved invoices are editable with original posting and transfer history preserved",
+          "depth": 0,
+          "tapNumber": 900
+        },
+        {
+          "name": "manual invoice edit persists in the same register record with retained issue history, creation metadata and no GL write",
+          "depth": 0,
+          "tapNumber": 903
+        },
+        {
+          "name": "manual invoice edit rechecks permission, company, origin, locked state, unresolved issues and concurrent writes",
+          "depth": 0,
+          "tapNumber": 904
+        },
+        {
+          "name": "invoice adapter validates the fresh credit source, persists its ID and leaves original documents unchanged",
+          "depth": 0,
+          "tapNumber": 907
+        },
+        {
+          "name": "creating line types persists the shared Type catalog, avoids duplicates and preserves legacy references",
+          "depth": 0,
+          "tapNumber": 909
+        },
+        {
+          "name": "creating types rechecks permissions, company and storage without overwriting existing references",
+          "depth": 0,
+          "tapNumber": 910
+        },
+        {
+          "name": "custom line types save into both Quantity and Summary and are checked against fresh company options",
+          "depth": 0,
+          "tapNumber": 911
+        },
+        {
+          "name": "free-text Code / Name persists in Quantity and Summary without changing accounting values",
+          "depth": 0,
+          "tapNumber": 914
+        },
+        {
+          "name": "save command adds one shared-register invoice and history, is idempotent and leaves other documents intact",
+          "depth": 0,
+          "tapNumber": 915
+        },
+        {
+          "name": "save persists two Summary allocations for one Quantity line and rejects unmatched allocations atomically",
+          "depth": 0,
+          "tapNumber": 916
+        },
+        {
+          "name": "new invoice status is selected, persisted and audited without claiming payment, posting or transfer",
+          "depth": 0,
+          "tapNumber": 917
+        },
+        {
+          "name": "invoice header has a system status dropdown and save label follows the selected status",
+          "depth": 0,
+          "tapNumber": 918
+        },
+        {
+          "name": "save rechecks current permissions, company, counterparty and internal-user status and handles storage failure",
+          "depth": 0,
+          "tapNumber": 919
+        },
+        {
+          "name": "Invoices owns creation UI; the shared Documents register retains classification and access filtering",
+          "depth": 0,
+          "tapNumber": 920
+        },
+        {
+          "name": "Create invoice uses the shared system Back button and preserves save-time disabling",
+          "depth": 0,
+          "tapNumber": 921
+        },
+        {
+          "name": "Accounting defaults starts expanded and contains only the four requested system fields",
+          "depth": 0,
+          "tapNumber": 922
+        },
+        {
+          "name": "save re-reads OCR types and rejects removed, deactivated or wrong-group selections",
+          "depth": 0,
+          "tapNumber": 931
+        },
+        {
+          "name": "dashboard upload, summary cards and company action labels have Lithuanian translations",
+          "depth": 0,
+          "tapNumber": 941
+        },
+        {
+          "name": "status labels are separate from actions, preserve custom values and never mutate stored data",
+          "depth": 0,
+          "tapNumber": 942
+        },
+        {
+          "name": "language preference persists independently and round-trips without record writes",
+          "depth": 0,
+          "tapNumber": 943
+        },
+        {
+          "name": "company overview translates every chart, VAT label, month and helper",
+          "depth": 0,
+          "tapNumber": 945
+        },
+        {
+          "name": "reconciliation localizes enums and notices but preserves document and payment data",
+          "depth": 0,
+          "tapNumber": 946
+        },
+        {
+          "name": "warehouse stock labels, choices and validation messages translate without changing record values",
+          "depth": 0,
+          "tapNumber": 948
+        },
+        {
+          "name": "ADDINFO shortcut help is translated and retains both keyboard combinations",
+          "depth": 0,
+          "tapNumber": 949
+        },
+        {
+          "name": "notification chat opens inside the normal shell and Back retains the notification subtree and scroll",
+          "depth": 0,
+          "tapNumber": 1029
+        },
+        {
+          "name": "explicit Chats sidebar navigation exits the notification detour and opens the normal Chats view",
+          "depth": 0,
+          "tapNumber": 1030
+        },
+        {
+          "name": "opening a chat document and returning preserves the chat and its notification return path",
+          "depth": 0,
+          "tapNumber": 1031
+        },
+        {
+          "name": "opening a related chat still rechecks current chat access before navigating",
+          "depth": 0,
+          "tapNumber": 1032
+        },
+        {
+          "name": "tests/notification-details-panel.test.mjs",
+          "depth": 0,
+          "tapNumber": 113
+        },
+        {
+          "name": "the actual completion handler validates, persists the route, and hands off without a review loop",
+          "depth": 0,
+          "tapNumber": 1129
+        },
+        {
+          "name": "TeamLead cannot forward to itself; shared OCR editor reserves more width for data entry",
+          "depth": 0,
+          "tapNumber": 1177
+        },
+        {
+          "name": "the real completion boundary persists configured values, parties and lines and still enforces required data",
+          "depth": 0,
+          "tapNumber": 1198
+        },
+        {
+          "name": "tests/ocr-document-delivery.test.mjs",
+          "depth": 0,
+          "tapNumber": 128
+        },
+        {
+          "name": "read-only workflow reuses document extraction layout and guards writes and work-time logging",
+          "depth": 0,
+          "tapNumber": 1253
+        },
+        {
+          "name": "competing values are attached to their own learning record with supplier and field context",
+          "depth": 0,
+          "tapNumber": 1266
+        },
+        {
+          "name": "help is an icon-only Dashboard-style popup and the worker queue shortcut is removed",
+          "depth": 0,
+          "tapNumber": 1267
+        },
+        {
+          "name": "review integration teaches only confirmed documents and waits before opening the next",
+          "depth": 0,
+          "tapNumber": 1288
+        },
+        {
+          "name": "My tasks, TeamLead and worker Runs share the catalog table; issues uses the same resolver",
+          "depth": 0,
+          "tapNumber": 1323
+        },
+        {
+          "name": "built-in OCR rules are deactivated, visible in settings, and excluded from processing",
+          "depth": 0,
+          "tapNumber": 1327
+        },
+        {
+          "name": "unused custom OCR rules delete while linked custom rules remain inactive",
+          "depth": 0,
+          "tapNumber": 1329
+        },
+        {
+          "name": "both lists resolve descriptions from the specific OCR substatus without changing records",
+          "depth": 0,
+          "tapNumber": 1366
+        },
+        {
+          "name": "send opens the system dialog; comments are visible above extraction and in the TeamLead list",
+          "depth": 0,
+          "tapNumber": 1395
+        },
+        {
+          "name": "OCR save boundary revalidates access, stale workflow and required fields before writing",
+          "depth": 0,
+          "tapNumber": 1415
+        },
+        {
+          "name": "explicit TeamLead referral may carry incomplete fields, approval may not",
+          "depth": 0,
+          "tapNumber": 1416
+        },
+        {
+          "name": "single-company sidebar has no All organizations control and retains selection",
+          "depth": 0,
+          "tapNumber": 1424
+        },
+        {
+          "name": "OCR and company menus use Uploaded document without changing their route identifiers",
+          "depth": 0,
+          "tapNumber": 1425
+        },
+        {
+          "name": "settings tabs preserve the mounted digitization form and use the organization ID for both lists",
+          "depth": 0,
+          "tapNumber": 1465
+        },
+        {
+          "name": "the three system tabs are visible only for an organization, not for an unrelated counterparty",
+          "depth": 0,
+          "tapNumber": 1466
+        },
+        {
+          "name": "notification session remains stable on unrelated renders and re-resolves changed access",
+          "depth": 0,
+          "tapNumber": 1486
+        },
+        {
+          "name": "tests/reconciliation-gl-dialog.test.mjs",
+          "depth": 0,
+          "tapNumber": 185
+        },
+        {
+          "name": "linked rows label each document side without inventing GL account codes",
+          "depth": 0,
+          "tapNumber": 1550
+        },
+        {
+          "name": "tests/related-object-link.test.mjs",
+          "depth": 0,
+          "tapNumber": 196
+        },
+        {
+          "name": "different records with identical labels stay independently selectable",
+          "depth": 0,
+          "tapNumber": 1724
+        },
+        {
+          "name": "navigation is administrator-only and profile reuses company layout without company identity",
+          "depth": 0,
+          "tapNumber": 1743
+        },
+        {
+          "name": "Status and OCR status use the shared system connector and keep independent navigation",
+          "depth": 0,
+          "tapNumber": 1753
+        },
+        {
+          "name": "organization dialog groups five company settings with shared dropdowns and one action row",
+          "depth": 0,
+          "tapNumber": 1755
+        },
+        {
+          "name": "OCR statuses use document-type navigation with a separate substatus list",
+          "depth": 0,
+          "tapNumber": 1756
+        },
+        {
+          "name": "group search and each substatus list have independent filters and navigation state",
+          "depth": 0,
+          "tapNumber": 1757
+        },
+        {
+          "name": "Processing substatus labels and rows are plain text; only the Edit icon opens the editor",
+          "depth": 0,
+          "tapNumber": 1764
+        },
+        {
+          "name": "tests/task-permissions.test.mjs",
+          "depth": 0,
+          "tapNumber": 208
+        },
+        {
+          "name": "Uploaded documents shows all OCR states by default, including older processed and approved documents",
+          "depth": 0,
+          "tapNumber": 1860
+        },
+        {
+          "name": "group and substatus filters narrow all-status register without changing records",
+          "depth": 0,
+          "tapNumber": 1861
+        },
+        {
+          "name": "explicit date, organization and search filters still apply to completed documents",
+          "depth": 0,
+          "tapNumber": 1862
+        },
+        {
+          "name": "serialized bulk command touches selected IDs only and retains durable audit",
+          "depth": 0,
+          "tapNumber": 1866
+        },
+        {
+          "name": "stale mixed selections and revoked rights cannot partially write",
+          "depth": 0,
+          "tapNumber": 1867
+        },
+        {
+          "name": "actual row and header JSX stay aligned after restoring source-first column order",
+          "depth": 0,
+          "tapNumber": 1882
+        }
+      ],
+      "comparison": "No baseline comparison performed. Failures are not classified as pre-existing.",
+      "tapPath": "/Users/albert/Documents/Codex/2026-07-13/p/outputs/v25-release-2026-11-25/full-tests.tap"
+    },
+    "browser": "Recorded separately after deployment.",
+    "diffCheck": "Existing extra blank line at EOF in tests/organization-gear-navigation.test.mjs; preserved."
+  },
+  "limitations": [
+    "Frontend test prototype, not production backend authentication or a shared production database.",
+    "OCR, real email, bank and accounting API services are not connected.",
+    "Full suite has failures; no all-green claim. Exact test evidence retained locally.",
+    "Local .env, data, credentials, dependencies, Git history and agent instructions excluded.",
+    "Pages releases on the same domain may share browser storage; use a separate browser profile for isolated testing."
+  ],
+  "artifacts": [
+    {
+      "path": ".nojekyll",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "404.html",
+      "bytes": 742,
+      "sha256": "95cf668f5bca59a20152b229feda6ac45792eec18a3e07c0254ec547fcb8f9ff"
+    },
+    {
+      "path": "assets/AdministrationView-BUcXlCia.js",
+      "bytes": 34777,
+      "sha256": "30a4912ac9aa6b5864858b6b5b7af01257d577f916ec11a512b5f0c76a208adc"
+    },
+    {
+      "path": "assets/AdministratorSettings-7J2Xfcm0.js",
+      "bytes": 7096,
+      "sha256": "ee53fa063fc92c954e82bbc53a711a2649866f6344dd99714ef822c529b6eb44"
+    },
+    {
+      "path": "assets/AutomationProcessDetailView-B0TRFBpL.js",
+      "bytes": 107031,
+      "sha256": "e973cdeb09f915d1abb1d65706dd76143bf0f0216b6777cca45160e1bb9aaa33"
+    },
+    {
+      "path": "assets/AutomationSecurityAccessView-s5143rjc.js",
+      "bytes": 21748,
+      "sha256": "b1e27241ec5d93abd1c8bd6a8019eb7eaa5bc60658573d3a5ff2dc4dc7dcfd9a"
+    },
+    {
+      "path": "assets/BalanceConfirmationPortal-DSiRx5ec.js",
+      "bytes": 8622,
+      "sha256": "49cd781aacd26a389fe2c4c3d7b3e614976aebf48207dc50f6e05cfba0f5d269"
+    },
+    {
+      "path": "assets/BalanceStatementDocument-BwjPV_fg.js",
+      "bytes": 14982,
+      "sha256": "ca9e19489d605f8c122f22483d676f237dcf095750ea7bb058f77320c5345439"
+    },
+    {
+      "path": "assets/CashControls-DdGN7rys.js",
+      "bytes": 3085,
+      "sha256": "ce684370ef17cf34cd1fd4604c788f0af5c73892c1c7a179d53e9a3aeb0d324f"
+    },
+    {
+      "path": "assets/ChatsView-fGXwDpOA.js",
+      "bytes": 38514,
+      "sha256": "6e4304d7f78cd66981fcf062334187e5dc317d958ed1a461d695757b0ff6c4bc"
+    },
+    {
+      "path": "assets/Companies-DX-2cl61.js",
+      "bytes": 119032,
+      "sha256": "2664aef2c01f66dbf6a475bf25a18a3c23bd80861654a23e4c3c32b36acf19f0"
+    },
+    {
+      "path": "assets/CompanyActionHistoryView-s8qllC0e.js",
+      "bytes": 13184,
+      "sha256": "e14d45d92388e3106283174a2642e3e12161a5aeaa147b46ae766a004e78accb"
+    },
+    {
+      "path": "assets/CompanyBreadcrumb-BuAirt9e.js",
+      "bytes": 1461,
+      "sha256": "2d2211956b3ac2e0fd1bcf024bcdeb80fc36730c9af5078fbd782d8deeb2d3f8"
+    },
+    {
+      "path": "assets/CompanyCashView-0_rheP6K.js",
+      "bytes": 34375,
+      "sha256": "2ce20a9b15b234bcbaa67e515e45f87eb0ea8b439eea4dd1f36cdbcde4900108"
+    },
+    {
+      "path": "assets/CompanyDetail-DEPqrLbw.js",
+      "bytes": 482184,
+      "sha256": "8c138c922233d03858e6e86d4036d19a32620a411aebcc7f90d32994655e4685"
+    },
+    {
+      "path": "assets/CompanyFixedAssetsView-D0M7Zv6i.js",
+      "bytes": 32609,
+      "sha256": "a9e000c525a5a30b3700f476219584653261735c57c168e62d62f2e1297fe83b"
+    },
+    {
+      "path": "assets/CompanyWarehouseView-C9Dx5eE7.js",
+      "bytes": 42124,
+      "sha256": "58166115f47aedcb7d2ef1cbf14a17b68f954fbe570790aa263affeb3f0215d2"
+    },
+    {
+      "path": "assets/Dashboard-Oh_GDT-s.js",
+      "bytes": 209347,
+      "sha256": "1986cb844f82be3b11999e85a9f03da840107d229e98e2ba885d7c8cdc69fc27"
+    },
+    {
+      "path": "assets/DebtLinkedDocumentView-CVmAPnZo.js",
+      "bytes": 5673,
+      "sha256": "d0567aba60bd5397be11295d283e343c83b09f81524e55041ce834e3e4cd8bda"
+    },
+    {
+      "path": "assets/DebtReconciliationPortalView-YQxIT7Q5.js",
+      "bytes": 18595,
+      "sha256": "fe2bc2bcf4e479655fae2fed096fffafaa582b0df55f966ef7210118b09bd2e9"
+    },
+    {
+      "path": "assets/DeleteButtons-Bx3Bt8YD.js",
+      "bytes": 2093,
+      "sha256": "f01cea9f57c377a699c9046215312f34b43dff3411bd849e712ee24dcb8773d1"
+    },
+    {
+      "path": "assets/DocumentIssueConversation-B2jqu6uO.js",
+      "bytes": 8055,
+      "sha256": "b0876da6ab369a80636d61957b5baf335fe5f015e9377a07695beb1a6d4618c8"
+    },
+    {
+      "path": "assets/DocumentIssueQueue-JxERf1bk.js",
+      "bytes": 13516,
+      "sha256": "12db1d781123945c69ae57dd328fe2d95ce42cb1266bf46cd7d438f80ea5e80b"
+    },
+    {
+      "path": "assets/Documents-BAUJkqNR.js",
+      "bytes": 745934,
+      "sha256": "6f545174f207e82cc2cf8d81c9ceb95933301ccef407d307e50c46df7dd2d23a"
+    },
+    {
+      "path": "assets/ExchangeRatesView-Bcqr4yl8.js",
+      "bytes": 10165,
+      "sha256": "896b0dcd4f621b7db695049e76d3e1ecd7cec2d8725cd7441b4e3a64bca02671"
+    },
+    {
+      "path": "assets/ExportSettingsHelpPage-B-ujJYDu.js",
+      "bytes": 16832,
+      "sha256": "5c379d3c1c78f7ced676b4a4510c6ac94c6cdba1d825b4c858d2c6a362637755"
+    },
+    {
+      "path": "assets/FinancialStatementItemsView-tOmAQJGO.js",
+      "bytes": 57579,
+      "sha256": "ee8013d55a2d3d7d49f7b13b1aac966b514f36602ceec309fe8da370905aad3a"
+    },
+    {
+      "path": "assets/GeneralLedgerView-DwICs83M.js",
+      "bytes": 76465,
+      "sha256": "28115282559d16472424972343d2bd2d82baebeb232173f7a85d221e5591cdf6"
+    },
+    {
+      "path": "assets/GlJournalDialog-hbayClCv.js",
+      "bytes": 2754,
+      "sha256": "bb3a769fdbad1af556536ea2e898a3343bec847774c77ddbf6a56f262b82f23d"
+    },
+    {
+      "path": "assets/HelpAdministration-Cb4W1xSr.js",
+      "bytes": 28469,
+      "sha256": "34b769929a1d5d077e5dd930b3e94f13706878559d8124463051d96fc3bb8df5"
+    },
+    {
+      "path": "assets/HelpArticleLink-C01lNLR4.js",
+      "bytes": 693,
+      "sha256": "4df5c87aead6527821a90e5b98453c2b4c7defdbd333dea262e610d968f7e080"
+    },
+    {
+      "path": "assets/HelpCenterPage-BZxlGrjC.js",
+      "bytes": 18534,
+      "sha256": "bc52e4e88b391385e87766155e97e6e38ca4e2cf9813725a7d40df23cdbb0837"
+    },
+    {
+      "path": "assets/HelpContentProvider-DfT3KXWR.js",
+      "bytes": 10415,
+      "sha256": "5fcf7198bf2df31d735bf9f6d737dcc869e2ddb7c675b016996275a2229052f1"
+    },
+    {
+      "path": "assets/HelpContentRoot-BxVjkQvA.js",
+      "bytes": 10087,
+      "sha256": "47e8f97d7887b778b4c34f2f14ec197a603c856346ec2ab2b3a1de551286cd09"
+    },
+    {
+      "path": "assets/HelpFaqView-DceGks6X.js",
+      "bytes": 9560,
+      "sha256": "d02f9e3ff444c709d727aad124291a38eddbceee341147aad4333c1e7baac8db"
+    },
+    {
+      "path": "assets/HelpMedia-Bc8P7_Z8.js",
+      "bytes": 738,
+      "sha256": "005bad56f77522c55fbbd547c997fab9cb991bb95f7ed75fb10a3b859bb3a9a9"
+    },
+    {
+      "path": "assets/HorizontalTableScrollbar-CdlW-Sjm.js",
+      "bytes": 14413,
+      "sha256": "d0c2bd02443f86d287f7f5460969e27600a19582686d35cea3b6fa7460367b58"
+    },
+    {
+      "path": "assets/ImportButton-BoOKiGck.js",
+      "bytes": 7921,
+      "sha256": "36faccd5e60377633522cb4afd5120f5f1a47146e08a42ad9cffdebf3adfdc2e"
+    },
+    {
+      "path": "assets/IntegrationHelpLink-DTTWRb4Z.js",
+      "bytes": 783,
+      "sha256": "04f7f20bfde34d8425db5245825d2211a4b2b8c389c59edf3ae857ad44affcf0"
+    },
+    {
+      "path": "assets/IntegrationsHelpPage-DDeP_0mN.js",
+      "bytes": 14955,
+      "sha256": "4ebdead3b51f2e9259f5e312af37bbc3dd7de9d12026f31dd2754ec5e3cc9c3e"
+    },
+    {
+      "path": "assets/MultiSelectField-DlRvxpyi.js",
+      "bytes": 4785,
+      "sha256": "37a9f0825ddf3df3703f720d69130e7a4902ce9ea469be5b717173edb294cf98"
+    },
+    {
+      "path": "assets/OcrBreadcrumb-GQQEhUWQ.js",
+      "bytes": 192,
+      "sha256": "504497a727fe34998e565b3928e5a6ad6458639822665abd1701173e5899a7c3"
+    },
+    {
+      "path": "assets/OcrChatsView-DQakr63n.js",
+      "bytes": 4501,
+      "sha256": "d671fbbe27160c276127a920cb6ac158a0fe606443c0fbfd92d92b25883434fa"
+    },
+    {
+      "path": "assets/OcrDocumentIssuesView-B_WcVLd2.js",
+      "bytes": 4749,
+      "sha256": "eb7ce8e7d4730ca84a5c29c0bcce1b7b5b6b4d0b1bd69a1e5d075cbd66336e77"
+    },
+    {
+      "path": "assets/OcrDocumentRulesView-CYmk-CZ6.js",
+      "bytes": 17760,
+      "sha256": "891943fea57b360802c3033e548e85c4fc8ed07491cdeb6cfd4579abf28e6b28"
+    },
+    {
+      "path": "assets/OcrDocumentStatusDetails-DNZWlmFH.js",
+      "bytes": 44569,
+      "sha256": "6bf8db01c65ef5d77aff0d5a7e88a594ec8b12243b9895dde5b96cdda4ae46da"
+    },
+    {
+      "path": "assets/OcrLearningDocumentView-BsXJH0up.js",
+      "bytes": 6844,
+      "sha256": "a188190df64a4005dc0f0f6a049b54384f99a61fd025f0adad7682a619aefff2"
+    },
+    {
+      "path": "assets/OcrMachineLearningView-BO8-cg3e.js",
+      "bytes": 26810,
+      "sha256": "d8ff4eca25162d6f0c5a563190600ed98bcac3fef6ca01c85d996b8b95c7be0b"
+    },
+    {
+      "path": "assets/OcrMyTasksView-BARzUimg.js",
+      "bytes": 9823,
+      "sha256": "23a45cd859df3f6b8f36c0ed344ea26a50a797873d55eddef3cdd2f8f416930d"
+    },
+    {
+      "path": "assets/OcrProcessedDocumentsView-CMOMSWau.js",
+      "bytes": 122323,
+      "sha256": "2b0b0714351dd87b3705b73c59dde7e9329b0a6f491dd279d17a28948f94d5e8"
+    },
+    {
+      "path": "assets/OcrReviewView-CimrKctu.js",
+      "bytes": 19694,
+      "sha256": "36a26294c69fc5da651c905276fe06ada225a175569ebc2baf7de1ed7b3de6fb"
+    },
+    {
+      "path": "assets/OcrSearchField-Cc4cZC8M.js",
+      "bytes": 1411,
+      "sha256": "d87f6d3967f6e3acb67b90d9cb0c0ce419ef821e03ec1ef95f133c208bcf7a38"
+    },
+    {
+      "path": "assets/OcrStatusSettingsView-CPvSyIIm.js",
+      "bytes": 12650,
+      "sha256": "0a9f47e8f8634268a0abeec5a71b3615539e4accf8f443d33d564b7061446a35"
+    },
+    {
+      "path": "assets/OcrView-C4VZE3T8.js",
+      "bytes": 25598,
+      "sha256": "93b1f805a29371d187c6573f42e574f39717aaab3198a5ce1be0fcd068d4a408"
+    },
+    {
+      "path": "assets/OperationDateValidationView-CuFa4xbU.js",
+      "bytes": 16158,
+      "sha256": "3836b677c4f7cee646faed498dad2248a33c19e7ef3572712486fb17d471fe43"
+    },
+    {
+      "path": "assets/OrganizationEmailSettingsView-BzMeqSZq.js",
+      "bytes": 11545,
+      "sha256": "c13ca730b2ad28debd81149a97a62ab4c245a1480f17294874d27b7ab2f3ed95"
+    },
+    {
+      "path": "assets/OrganizationReferenceValuesView-DElR-ry7.js",
+      "bytes": 63711,
+      "sha256": "31d504f4106f405d13b60c34704037b857d7ceb1c6ea4eb4867f86b294aaa369"
+    },
+    {
+      "path": "assets/OrganizationRequiredActionsView-ab1nnlyF.js",
+      "bytes": 48634,
+      "sha256": "d1ea6b588961894780eb9b42504e25689cec74d2af37d5ed320ee8e7d0dd181d"
+    },
+    {
+      "path": "assets/OrganizationSettingsHelpPage-B_NaaSJz.js",
+      "bytes": 4919,
+      "sha256": "3bfb1fe830ea39985e1e9a7504a7a9672a9529e6daaf4698989c1aa3992a59cb"
+    },
+    {
+      "path": "assets/OrganizationSetupIntegration-Ig86Af_Y.js",
+      "bytes": 145965,
+      "sha256": "813333133478e802f265b2114634636089ab9cd587d81c22abd7eb44610a3631"
+    },
+    {
+      "path": "assets/PageHeader-CZ0Own_a.js",
+      "bytes": 2191,
+      "sha256": "b30e9e9b2dca1c07b3cdd0716b1405c8c1e7d2ed0d16a28783a79e5409a4cbcb"
+    },
+    {
+      "path": "assets/ProfileSettings-Fte5gyqs.js",
+      "bytes": 74742,
+      "sha256": "79988277c722098e3ff31848589e63753343e1daea4b56ccdbe209d78f4858db"
+    },
+    {
+      "path": "assets/RefreshAllButton-0YshKUKo.js",
+      "bytes": 534,
+      "sha256": "31ca8cf3a495cfcbb6ef495ce43eb2787b9686e442edcac18952221052d39811"
+    },
+    {
+      "path": "assets/ResourceSecurityAccessView-DwCOBWmC.js",
+      "bytes": 5712,
+      "sha256": "b8a74fedb4f8a62b25613ce54d3a56758ce72aaf0235a818d64df6291d131c24"
+    },
+    {
+      "path": "assets/SaasAdministration-MMGsLyxJ.js",
+      "bytes": 19382,
+      "sha256": "40e54b2649de404fc4fdd2c22ad6b5ca1b064689a3a6db6d2819d830d1e60f63"
+    },
+    {
+      "path": "assets/SaasPlanUsageCard-i15iejrq.js",
+      "bytes": 35151,
+      "sha256": "399e496356f482f38bd5664122843fd89d35082d7791fd4c396a52e767b0d002"
+    },
+    {
+      "path": "assets/ScheduleDatePicker-B9pWV2hE.js",
+      "bytes": 4668,
+      "sha256": "9366f430bd39b612027c5e3190d30d1d16688b9db1029a9008eff37e28d6d109"
+    },
+    {
+      "path": "assets/SearchableSelect-C85WuTmq.js",
+      "bytes": 5487,
+      "sha256": "78b499262dd1b1a2b5f6838ae2064eb64a73b0ceb35e21bacbc2b307ca01ca6c"
+    },
+    {
+      "path": "assets/SettingsIdentityManagementView-DLGjZgCQ.js",
+      "bytes": 63618,
+      "sha256": "788f02cf72e34ff58bf95e49e1556de8f2438d925612b8739e403ba289f20be8"
+    },
+    {
+      "path": "assets/SettingsOrganizationsView-BTRZldxW.js",
+      "bytes": 4319,
+      "sha256": "71bcd8656d336f6497dbce77ef3e448debf3b255e976f4ace27f16de1df80fc8"
+    },
+    {
+      "path": "assets/SettingsUserAnalyticsView-SyRhmwhA.js",
+      "bytes": 17394,
+      "sha256": "e83b3dee7527c6f11d709b6f56f52265abb4d71836ab287f38927fa86131fbdf"
+    },
+    {
+      "path": "assets/SystemNavigation-CWQqvTgy.js",
+      "bytes": 8469,
+      "sha256": "dcd92ac5c7693fb31c1670730affbee9d0e98fc34390a161f2ea370f38cc5704"
+    },
+    {
+      "path": "assets/TablePagination-BwRaabyI.js",
+      "bytes": 3070,
+      "sha256": "84be08fe39804fbaed1bd8a00dc181ecb2739671cb20481fc2f40f856e4c2111"
+    },
+    {
+      "path": "assets/UploadedDocumentsView-dakTwkdJ.js",
+      "bytes": 39203,
+      "sha256": "7174864989d3edd055bf02c934e032591a4e0c21fead3c2cfee9971d80f7b4dd"
+    },
+    {
+      "path": "assets/VatClassificationsView-Caxtm9f6.js",
+      "bytes": 44094,
+      "sha256": "7b704bf3ed04216f3c88708d2210542080e420a68d33913f3ca0422acc18b4b6"
+    },
+    {
+      "path": "assets/WarehouseTable-yUX0nZXp.js",
+      "bytes": 12837,
+      "sha256": "b0744864acf8f40516d8603ba9d3d021af6ad8a744392e6cf22c8485d33669ce"
+    },
+    {
+      "path": "assets/advanceEmployeeAccounting-BTvdWI1R.js",
+      "bytes": 1334,
+      "sha256": "bacaf6cdfbe9d2d1e1e894fb6184bb0f36cb868a6b071273357fc44dce1be507"
+    },
+    {
+      "path": "assets/advanceEmployeeExamples-D2RU7Jc0.js",
+      "bytes": 2068,
+      "sha256": "d2af6799802724f11a0d38d2fe753568ff40d1c64fbf1d74bd17451343c49f87"
+    },
+    {
+      "path": "assets/alert-triangle-DulerzP8.js",
+      "bytes": 434,
+      "sha256": "94507b5cecb3a63b556bb6d96bb2eea36f133d2fa846c3b92e1b3177908dd1b8"
+    },
+    {
+      "path": "assets/archive-DJcGkaf0.js",
+      "bytes": 422,
+      "sha256": "edc06817874a9198e2264da0f514fd7887ed92410089fa9af7ff8586b82386df"
+    },
+    {
+      "path": "assets/arrow-left-DA85Igdu.js",
+      "bytes": 333,
+      "sha256": "05ee61dab4dcd0933d4d03f659c77ed18894590cc3496380b89b37793b4b0469"
+    },
+    {
+      "path": "assets/arrow-right-DwwMT9Qj.js",
+      "bytes": 333,
+      "sha256": "3cf11ea7698a6e99198d1b4c86da0bc65821b745a2025a4da3f9314a94b5451b"
+    },
+    {
+      "path": "assets/arrow-up-BZJAX6KE.js",
+      "bytes": 609,
+      "sha256": "a855034df7ecea6e423c67bea59652fc89d1e8a8882b4507d473daf9de25c262"
+    },
+    {
+      "path": "assets/automationRunsStore-CmyofLyh.js",
+      "bytes": 3664,
+      "sha256": "0965006df8c0a745eec7c116ecd524ebd1999d507e598148da69bd702bbfa997"
+    },
+    {
+      "path": "assets/bankProcessingStatus-D-85OGlM.js",
+      "bytes": 972,
+      "sha256": "1ed5d4dd03a8b0ddc38e0ae35282405da43a2d3882d00e26464bf8758cc17852"
+    },
+    {
+      "path": "assets/bankStatementImport-BN-NNAku.js",
+      "bytes": 4681,
+      "sha256": "803680bf6afbb6533dd3a1af42ba736231a7c3844e2ab72994995d74582efdb1"
+    },
+    {
+      "path": "assets/bankTransaction-BX83GFQu.js",
+      "bytes": 6695,
+      "sha256": "62fcc9ec468197a3f92e62ead4ea8ea829d44139c8ca25493c6b96024ddc3777"
+    },
+    {
+      "path": "assets/bankTransactionCreation-MSHAPV6u.js",
+      "bytes": 3422,
+      "sha256": "d5f7770f1b34e9857ffc8c8e6e64d52dd230335780ee61e7f39022f79a60f753"
+    },
+    {
+      "path": "assets/book-open-BBU9uY44.js",
+      "bytes": 392,
+      "sha256": "3b24b213c444008d161a5acf033f3274a83def50b84d56892d761eec90e227c1"
+    },
+    {
+      "path": "assets/building-2-CLwwEs6N.js",
+      "bytes": 607,
+      "sha256": "75464f56d12774420fe09287cfb911696d88c37cb971addb333a3162f765ce9c"
+    },
+    {
+      "path": "assets/chatNotifications-BxfRRRK4.js",
+      "bytes": 2632,
+      "sha256": "3a02519252c3b719bb1a4089d26e6ce5a30f2f438ac2a1cf5c18bfce1233d51a"
+    },
+    {
+      "path": "assets/check-circle-2-Cvn8sBDi.js",
+      "bytes": 342,
+      "sha256": "f1a1c5da4c00483a92a96b8f4a09d856e23784477b5a1f97ee3437479717151d"
+    },
+    {
+      "path": "assets/chevron-right-CitmcWVa.js",
+      "bytes": 298,
+      "sha256": "da6a42dbdf16af9d63204aa8f6331885c973b99d1a6964d33557974b9acbd287"
+    },
+    {
+      "path": "assets/clock-3-CX1O44kR.js",
+      "bytes": 350,
+      "sha256": "2197748384952cdb81193126e3522714abc5459987a55a897b3b2fbdccdea55c"
+    },
+    {
+      "path": "assets/companyAdvanceEmployees-CwhYmhlT.js",
+      "bytes": 323,
+      "sha256": "7f157009a626370756e960a5cefc93f7b9e5744867e2b47845043db891a3afd4"
+    },
+    {
+      "path": "assets/companyBankEditing-D3CjXh-p.js",
+      "bytes": 798,
+      "sha256": "885de1ab51f10d020c2369eba814f4086ef9dada394f518f890bcc14672ba502"
+    },
+    {
+      "path": "assets/companyDigitizationSettings-B1eLUFwY.js",
+      "bytes": 4441,
+      "sha256": "a70dd30d948b8381a6f66712aafded99a09dfdc995e2d4167aef95669a219d50"
+    },
+    {
+      "path": "assets/documentActionHistory-KpL9MCat.js",
+      "bytes": 3139,
+      "sha256": "54ab384f0375b55bdefac4b6daaca1f4303bebcdc46f3e7f4658ca7332b08ef1"
+    },
+    {
+      "path": "assets/documentAdditionalColumns-D0fVyo18.js",
+      "bytes": 2725,
+      "sha256": "af7a39db1783eb6ac3b7654ee475a01da9ab63624195f443b09464a7d3ebe998"
+    },
+    {
+      "path": "assets/documentApproval-Dzalx6Dh.js",
+      "bytes": 2351,
+      "sha256": "0fef0645561d98b79e8696bc8aec75a1ef9d681aab93c3eee77c68c511ec89ad"
+    },
+    {
+      "path": "assets/documentArchive-geVx7_JM.js",
+      "bytes": 4948,
+      "sha256": "59a506dde798cb020afb2299cbf7db138ef96bae01ee09fd40f52350bd7619fc"
+    },
+    {
+      "path": "assets/documentBulkAssignment-BAAxPk8B.js",
+      "bytes": 9065,
+      "sha256": "4995555adbef6ff94f8e2cf489f00f975a08a48b8029d794e7444eea1969ed39"
+    },
+    {
+      "path": "assets/documentDetailEditing-BpSFI5SE.js",
+      "bytes": 3703,
+      "sha256": "1970039787b820ac01a5a6b03bf011ef4fdb0df827be1aec58a38c43ae3ec9e0"
+    },
+    {
+      "path": "assets/documentDetailedDigitization-YWRpgy9N.js",
+      "bytes": 1424,
+      "sha256": "528ec329be38199a95d07b29ec03ddbdd04bb4a6d8cb3639b310c66f49165c4c"
+    },
+    {
+      "path": "assets/documentEditAccess-BDwhZgfi.js",
+      "bytes": 2161,
+      "sha256": "a9c85b7bdf08e76cc3e8952a1272a04731d92a794ab1f56703bb1ca85a896f27"
+    },
+    {
+      "path": "assets/documentExport-Dy80NJn8.js",
+      "bytes": 1866,
+      "sha256": "7a478e77a8b7254181023ddfe4b0d05ffcc27eb5664773602e95e81462560d2f"
+    },
+    {
+      "path": "assets/documentInlineEditing-t5dHJl_k.js",
+      "bytes": 3621,
+      "sha256": "89c9260a524b6a09e277cbb34e2b4e442fe7ebb71b4122b57d32b1ca2f31865d"
+    },
+    {
+      "path": "assets/documentIssueAccess-D6kEqkl7.js",
+      "bytes": 1027,
+      "sha256": "3238ddeec84f9fd793879cde35d8ae274f4f18a1e10f68d18c9e3125de556879"
+    },
+    {
+      "path": "assets/documentIssueConversation-Be7MDuF4.js",
+      "bytes": 2099,
+      "sha256": "c58c7d7c7bfbe23c1ca5f30d4ef81276583b262d20fd5a48b547557cd1d7c680"
+    },
+    {
+      "path": "assets/documentOrganizationAssignment-Bsl6oHSd.js",
+      "bytes": 1208,
+      "sha256": "b94b1d8e43f9953bb4f6b7364dac354fa3931fde956effbdbf4bc0a580e766d4"
+    },
+    {
+      "path": "assets/documentProcessingStatus-BuOHqrxo.js",
+      "bytes": 1867,
+      "sha256": "8a64f2c91c23eb72c790fbc3aa11c87b6a3dd4ed79829f2588aff6d02c669da4"
+    },
+    {
+      "path": "assets/documentPurposeCatalog-BlhcCdsx.js",
+      "bytes": 2017,
+      "sha256": "eedf6d3861721ec419a93c5ecb4c8d6a872e1ea888fe731b0dc01c17376ee55f"
+    },
+    {
+      "path": "assets/documentResponsibleUsers-C2BVm0kq.js",
+      "bytes": 980,
+      "sha256": "f1f56744afe7eb9a6d226fdf722af1cbea9cf433e6e32bc9730c1cf9d9683b77"
+    },
+    {
+      "path": "assets/documentRowActionAccess-sujeclQD.js",
+      "bytes": 1513,
+      "sha256": "02c2b59dc663900e7bf52e2393bb5fe466c1171dcb7f56ef5996a31ef35f8783"
+    },
+    {
+      "path": "assets/documentRowActions-DLB18yMY.js",
+      "bytes": 4750,
+      "sha256": "5bc5fb83c428416476e3242239b009bd2cc0afa03a0bd38cf6012d81c3f52a72"
+    },
+    {
+      "path": "assets/documentSharedFields-BrTPNIwP.js",
+      "bytes": 2801,
+      "sha256": "ff11cf78f58f16d87fd9a42b3d3489704fa0abe46e255f078180b0a9acedbf9d"
+    },
+    {
+      "path": "assets/documentStornoAccess-DJSVjktG.js",
+      "bytes": 2059,
+      "sha256": "561e29ff881af17f1006114123714e3b0de571e3c9e3426f17884d3ce920d00a"
+    },
+    {
+      "path": "assets/documentSubtypeOptions-BmLr94qh.js",
+      "bytes": 503,
+      "sha256": "50f5986175f76ca805e46afc85303ee0eeca889bc90ddfd2a4a33538dbce51e1"
+    },
+    {
+      "path": "assets/documentTestDelivery-jRQWIowY.js",
+      "bytes": 5136,
+      "sha256": "3a2bb26cbbc3a4845a80c4a4e88b5f9cd308c73a92c4bff79223f2d6779dbe18"
+    },
+    {
+      "path": "assets/documentTypeCatalog-v3qG3mAV.js",
+      "bytes": 2298,
+      "sha256": "29982427c3aa52c60bbdd4ecb6b495c6bfc602801c210cf2073459602052a7a0"
+    },
+    {
+      "path": "assets/download-BevKJToF.js",
+      "bytes": 431,
+      "sha256": "196a1c1d5ac86048c0803c1717999d0ef3131394407cf0a76af498a231fe44b9"
+    },
+    {
+      "path": "assets/exportFormatSchemas-DHH-9d5C.js",
+      "bytes": 11371,
+      "sha256": "3c43a326dd731351914fc96723fa841f6c65fa0d607db1796cf0d8822498d2c8"
+    },
+    {
+      "path": "assets/exportHelpGuide-BpVXNOke.js",
+      "bytes": 9706,
+      "sha256": "2129ebce4a47713f42b997b16c60f5c9da26818cf13a1dd3899c12831b1b577c"
+    },
+    {
+      "path": "assets/exportSettingsHelp-2XdUSwCc.js",
+      "bytes": 27773,
+      "sha256": "43698758454fdabcb4546e03b3e39d2212bbb6e6b606a8692140dd11926af499"
+    },
+    {
+      "path": "assets/external-link-CsEWc3-8.js",
+      "bytes": 419,
+      "sha256": "ef51faa795a99e1bc1e6e195149977e52119aa3b19e00680000c45c7a38b5d1f"
+    },
+    {
+      "path": "assets/file-text-DGSsUYLr.js",
+      "bytes": 501,
+      "sha256": "fc35741caa1e3e4b3bdd3bb277bf6e9ac26f3e0cafef08949f7ba6e222239bfc"
+    },
+    {
+      "path": "assets/file-up-kJRJ6aEX.js",
+      "bytes": 469,
+      "sha256": "6a29149af42786c00a90cd2bdf17bd2fb81a2b108d5242c8b6996cf96216c780"
+    },
+    {
+      "path": "assets/folder-plus-BnNXUFxG.js",
+      "bytes": 474,
+      "sha256": "3b4cde0d756d422514ab0e6df88a2b3b7676da9959b45276c68fac83f3eecee4"
+    },
+    {
+      "path": "assets/generalReferenceCatalogs-kD-XtzR2.js",
+      "bytes": 1716,
+      "sha256": "c14d64f1e07243c2f2e17a4c32e1cf2b7fb2b0538d36ca4bbfc133e7deb930a6"
+    },
+    {
+      "path": "assets/help-circle-CZSv2lNk.js",
+      "bytes": 402,
+      "sha256": "8252d75cc7d22c3a33026c821676283384739e9b60ea72d48120ddfb01bcee36"
+    },
+    {
+      "path": "assets/helpEditorialCatalog-DNzEnAk4.js",
+      "bytes": 145468,
+      "sha256": "7fa46d3a9340c8aa910e7aaf7a86f654753b2f8057a756d02073ad5b50c375ae"
+    },
+    {
+      "path": "assets/html2canvas.esm-CBrSDip1.js",
+      "bytes": 202301,
+      "sha256": "b4f3add809a6d59f46260e8fd56cab240f3153def977386b230a839e8cb0b281"
+    },
+    {
+      "path": "assets/image-plus-BrM-knBa.js",
+      "bytes": 562,
+      "sha256": "d0eb69407491a3f4d6d21f660dcfe1c5cab9b12a1b683841f85082f9c539393b"
+    },
+    {
+      "path": "assets/index-4TPu6VEQ.js",
+      "bytes": 102702,
+      "sha256": "431b0f09b43e2f1afd16869edced88e4fd6037c6ddd137660513f80f410354da"
+    },
+    {
+      "path": "assets/index-BpAUVigc.js",
+      "bytes": 527550,
+      "sha256": "b8c7829e51653f4975358bba476d89eb677302eb13bc8756c2dde3d94183b8fd"
+    },
+    {
+      "path": "assets/index-ByAfILfv.js",
+      "bytes": 576258,
+      "sha256": "247a67ac6188704ed879bf8fb3e4f427fb48f8586f77c308ed5376456c9c4201"
+    },
+    {
+      "path": "assets/index-DzZOHqp2.css",
+      "bytes": 179753,
+      "sha256": "aa9da8677f684ff80a92e8bb38a3541cc7679763853100b17c46ee8a370c8d49"
+    },
+    {
+      "path": "assets/index.es-BWB6Npdo.js",
+      "bytes": 151005,
+      "sha256": "d1aeadea900ad5a8b78fdf63cc07604b18180f842bcbc3da988651af74d2381b"
+    },
+    {
+      "path": "assets/info-EO96ddiJ.js",
+      "bytes": 368,
+      "sha256": "4a90590e525b8ff4b6665f94b2d467f99e0e9bcfae01910c32d7b9c157312c93"
+    },
+    {
+      "path": "assets/integrationHelpTopics-H8LdTO9m.js",
+      "bytes": 187247,
+      "sha256": "be8ae04f4fd50751ac047840a727a961863ed8ddc54f53bca06a9f2fbac38704"
+    },
+    {
+      "path": "assets/invoiceAdvanceEmployee-D3rA3zdv.js",
+      "bytes": 1978,
+      "sha256": "f67a11242837bfbe14103abf5a94b598bb809d5a07e691521d639fdb7c9a46cf"
+    },
+    {
+      "path": "assets/invoiceCreation-C90oHiKd.js",
+      "bytes": 21846,
+      "sha256": "ec98c3608db232f3e16ebe68fc972ad56f8086b4bd08a5fbd368ac8cd53fd83c"
+    },
+    {
+      "path": "assets/invoiceCreditNote-dC2MUTBy.js",
+      "bytes": 4680,
+      "sha256": "a4ad366ee94d33b8068a1cb2d2b6b093e4aa722fd9d89321ce774a1084f14722"
+    },
+    {
+      "path": "assets/invoiceDocumentForm-Zs7Em4Sp.js",
+      "bytes": 6757,
+      "sha256": "402cca73b1cb36c36eaaa3cb713e9f8b1258a6040cd710bdeb5b45ffe356e7aa"
+    },
+    {
+      "path": "assets/invoiceLineExtras-DL4ySbNe.js",
+      "bytes": 23160,
+      "sha256": "2970544137658f7fd7988232b66b1d65165275690e48f3f55d562e64f96f7de7"
+    },
+    {
+      "path": "assets/invoiceLineTypes-Bpn5hbLS.js",
+      "bytes": 2318,
+      "sha256": "ad435f44e1b29330a7c5ccd1118ca62a06bed5588ca3f99af5bcb4e3653f0cda"
+    },
+    {
+      "path": "assets/jspdf.es.min--tRc7X51.js",
+      "bytes": 416240,
+      "sha256": "a1bd77f8fd8cd5499dfdbb49a1960268edf44c5440d885e63bd1bdbf316f7c46"
+    },
+    {
+      "path": "assets/key-round-DKwE_llX.js",
+      "bytes": 407,
+      "sha256": "3f7c5235788dae10712821047288527c3897d2959b01f265b277454f00055aa7"
+    },
+    {
+      "path": "assets/latvianAccountingSystems-DYmEHU5X.js",
+      "bytes": 7039,
+      "sha256": "54660315e9f5644c4c8df91f3cf90fefe8a01c1f40d6be196d49be745ccc5cf0"
+    },
+    {
+      "path": "assets/layers-3-WlQZUlZU.js",
+      "bytes": 639,
+      "sha256": "a76bd8a496373015515878f073fa17ad3764aef310647b311a7ac774afccdc88"
+    },
+    {
+      "path": "assets/link-2-BuaGA_W-.js",
+      "bytes": 758,
+      "sha256": "fb5ec2cfe237f05ec92cbae068cd1a57649b133cccfcc99d131ac8ada7ee2eed"
+    },
+    {
+      "path": "assets/more-vertical-EWdP6fTP.js",
+      "bytes": 394,
+      "sha256": "326887fff9bab20c69ec8202e7025cf44f4e5d4b131fb9703dc383b41ef52820"
+    },
+    {
+      "path": "assets/ocrAccountingExamples-DdzXMZWw.js",
+      "bytes": 3243,
+      "sha256": "44606317d71b54957da8b6c1286fff23d1eb6c2848ff66ce85dc456f597cc703"
+    },
+    {
+      "path": "assets/ocrAccountingFields-VTHwPmut.js",
+      "bytes": 1075,
+      "sha256": "673694dd0dcca3377e53494d6cbe1188759d0d33878dbf579e48c2923843a49d"
+    },
+    {
+      "path": "assets/ocrApprovalRouting-DbSC0AMP.js",
+      "bytes": 3546,
+      "sha256": "f7b42495dc7118f75984b9ec309715fa7f4037441fa38f14f29636f9e4daff6a"
+    },
+    {
+      "path": "assets/ocrApprovalRoutingStore-CP9okFvL.js",
+      "bytes": 1894,
+      "sha256": "a620ed733b9e2b2428bdede7620100e0665a38f9c981194e6c56ae8be0600c73"
+    },
+    {
+      "path": "assets/ocrAutomaticRouting-B_2F3RZB.js",
+      "bytes": 1557,
+      "sha256": "1a9d008a71d05052a3c61855b0601c87d4d850d2c718ca07860960d6a0332afb"
+    },
+    {
+      "path": "assets/ocrAutomationDocument-CDQ_UrMt.js",
+      "bytes": 5407,
+      "sha256": "b0cee538237c4ea2641e2c3b21a67219f078048d61dfc65b3670b3d43a0324b7"
+    },
+    {
+      "path": "assets/ocrAutomationExamples-CcD9-w2T.js",
+      "bytes": 2884,
+      "sha256": "c65e7921f76e6db7a13b7017c2d174dec7b868ef02ea05e241ef870256e74c90"
+    },
+    {
+      "path": "assets/ocrAutomationRules-3nzB3wkl.js",
+      "bytes": 7346,
+      "sha256": "27ac1d89ede5cfe165dfd759bee2bf11f33da7fc478ec75e6603fd0cfdb1e47c"
+    },
+    {
+      "path": "assets/ocrAutomationWorkflowExamples-DDtqkcaE.js",
+      "bytes": 4028,
+      "sha256": "2a9bece425df5ec880d927f5086cb6e29d8ad288f69151ed7f97063a76f7a910"
+    },
+    {
+      "path": "assets/ocrCompletion-DEexM2L9.js",
+      "bytes": 1356,
+      "sha256": "78f0a8c09727a6771abf21c92e6edf26182fdbce99e0b7b7de8cba7fa2e73550"
+    },
+    {
+      "path": "assets/ocrDocumentStatusPresentation-DOSjbCdW.js",
+      "bytes": 2398,
+      "sha256": "dfef76c461935c26a1a1b051070ad69955d045e5308d4e607ec0f13756b6a139"
+    },
+    {
+      "path": "assets/ocrDocumentWorkflow-D4PSqu4d.js",
+      "bytes": 9972,
+      "sha256": "218e351ddaab8c735c22619a07d45c202b29b242031b929f24f794d70661dfee"
+    },
+    {
+      "path": "assets/ocrFieldValidation-CZvSOcB9.js",
+      "bytes": 4913,
+      "sha256": "0709515b78ce9e8df01bba36bfa0ed463a5865c8c5087eb9293aedea8c566569"
+    },
+    {
+      "path": "assets/ocrFormExamples-CW4LhfVr.js",
+      "bytes": 6611,
+      "sha256": "6d9579b24671138dbb7b20f427a72c5140194b573a0d0e7aa4d6279ef0afb0d3"
+    },
+    {
+      "path": "assets/ocrFormSchema-CurEJPno.js",
+      "bytes": 4278,
+      "sha256": "9fba4a6867dc457274fa5f91e64019f49689c8250867f1c668b3ed212e7bc24a"
+    },
+    {
+      "path": "assets/ocrHandwriting-BgOm1Y8k.js",
+      "bytes": 758,
+      "sha256": "52cd4434bd912c040a031decd056f781b3a40bcb1f0e99a6e7281f8ba6b35fc4"
+    },
+    {
+      "path": "assets/ocrHandwritingExamples-Bv0EMhi1.js",
+      "bytes": 2042,
+      "sha256": "14e77140c5fea9f981531745f853ce8d09ae8b5a89c87440f7f9b84a2fe21e02"
+    },
+    {
+      "path": "assets/ocrIssueCorrection-DUZGZIXE.js",
+      "bytes": 1504,
+      "sha256": "0cbcd3775ba2ddc2101e8d777c49ab174f0e7f42a8453a6a706db5aef7e3d76c"
+    },
+    {
+      "path": "assets/ocrLearningStore-DGK3yXFl.js",
+      "bytes": 10277,
+      "sha256": "36a68ed851a76ad06bc1f8f6ed54badf3e0b9ba7b06f05ca0a52c7423dd26a94"
+    },
+    {
+      "path": "assets/ocrMyTaskExamples-DugE0eLA.js",
+      "bytes": 5680,
+      "sha256": "0189a0dd79af2065df2a99d6bbd805884dbaa5fe0247f2a9f10bb26a3fafe468"
+    },
+    {
+      "path": "assets/ocrPartyConfiguration-CRpb9TBa.js",
+      "bytes": 2804,
+      "sha256": "3a63bd9cf6c3865361d2528fe38bfc232726f23e80022dc40d6d6feab61e31fc"
+    },
+    {
+      "path": "assets/ocrPartyExamples-DOSO-9zu.js",
+      "bytes": 4575,
+      "sha256": "2fded2f3045ceafd9cff5c432f96b8feabf36ae4173e69109ada62616513dc46"
+    },
+    {
+      "path": "assets/ocrPdfSplit-DaqibElN.js",
+      "bytes": 3462,
+      "sha256": "fb8b6e1c9c938e149e8165d36663aee5f8ea84bd4186ff6d0ec3816faef90f0b"
+    },
+    {
+      "path": "assets/ocrQualityExamples-D2XrNWYL.js",
+      "bytes": 1130,
+      "sha256": "7a59d6433203bc1b0efac261c08e10073acc76228dafd215a4d82409a3cae5cd"
+    },
+    {
+      "path": "assets/ocrRecognitionExamples-B-rn1tm1.js",
+      "bytes": 1987,
+      "sha256": "9e810911a254af8adb316827380e258eab67c65395cf8471ccec900a51e31906"
+    },
+    {
+      "path": "assets/ocrRegisterExamples-CB44T-kx.js",
+      "bytes": 7767,
+      "sha256": "f62dd319ea4958f656942c5901b56b7386dc305d1ddbef10845f7acb616dc29d"
+    },
+    {
+      "path": "assets/ocrRequiredFields-F7eGqVdw.js",
+      "bytes": 5524,
+      "sha256": "33677d2b165ea389effc9b35e43a1c41012cee1dfeae0940c6a9b27c365a9a41"
+    },
+    {
+      "path": "assets/ocrReviewDocuments-BEdlT-RS.js",
+      "bytes": 1936,
+      "sha256": "b08abd24c43c83deacb656c2e7d5d4fc320095ab4079ba3d7f40c0854a33dfea"
+    },
+    {
+      "path": "assets/ocrReviewExampleCompletion-DkFp0SeJ.js",
+      "bytes": 1074,
+      "sha256": "0fbaabd86e5322563c64c6c20022959aaa5a3c8b444449a360a2d3549a0482a9"
+    },
+    {
+      "path": "assets/ocrTaskTabExamples-C3AWheUg.js",
+      "bytes": 1163,
+      "sha256": "31014b7a72109d16dce37e26db8450bc31b37455739461fb6c9b5f2e483b0273"
+    },
+    {
+      "path": "assets/ocrVisualExamples-Bf3sS7eW.js",
+      "bytes": 3737,
+      "sha256": "857565afe87ae95bddc2db119c3e0fbbec3c3ebe8893b8a2eec966388404000d"
+    },
+    {
+      "path": "assets/ocrWorkerHandoff-C5ykM5EM.js",
+      "bytes": 4543,
+      "sha256": "ce75ef6b7e17542b7e9ee8cdcdfcda6c418d9a4980c97f65f3462b6a2a0e761b"
+    },
+    {
+      "path": "assets/ocrWorkflowExamples-BNmjaVEj.js",
+      "bytes": 10534,
+      "sha256": "4c96e97bb50ca63a30f1b9a1e7d6ddf3f376b758a551da0c0fab02fea3e326a7"
+    },
+    {
+      "path": "assets/organizationDirectory-DZIW8-zv.js",
+      "bytes": 3206,
+      "sha256": "7b7ffebda79f36afb424cd2d75aef694fea8e59c7c6c403fe835f46203032a45"
+    },
+    {
+      "path": "assets/organizationEmail-CGRm1h6H.js",
+      "bytes": 4245,
+      "sha256": "4f6658a80a1ae5e503287d33490783ca8898c47020737f46e4e5fd2e4c8d3490"
+    },
+    {
+      "path": "assets/organizationProductGroups-DzwTkGWU.js",
+      "bytes": 1448,
+      "sha256": "70b90e83a0cf57c0a2fd426b9d910eb3fd1ef14303f488314f0597a50e5b37f4"
+    },
+    {
+      "path": "assets/organizationSettingsHelp-g2z853H4.js",
+      "bytes": 15604,
+      "sha256": "ebc617b211115665057b6c903023819fe83fe3dc8994124f5186c8005b4bb759"
+    },
+    {
+      "path": "assets/pdf.worker.min-yatZIOMy.mjs",
+      "bytes": 1375838,
+      "sha256": "1baa1844c89c80a5b2797c916e75ab29254be46d8e9cb53cb6364d7aad84be36"
+    },
+    {
+      "path": "assets/pencil-1G7hBdqO.js",
+      "bytes": 365,
+      "sha256": "ef44846120ce683ded20cb81acb72bf331ece13d488beef55b180a11c3cf2bd9"
+    },
+    {
+      "path": "assets/play-Bm8Uck6q.js",
+      "bytes": 303,
+      "sha256": "18ddd5a74617c54c78b317e37db6cd25e5c7fea5c5007d590aa04db34db03eb4"
+    },
+    {
+      "path": "assets/purify.es-BnINGy_Y.js",
+      "bytes": 28928,
+      "sha256": "e1a7db8fd26de50139d42c7758c05111b45ee109c317b77816015927a8e01f7e"
+    },
+    {
+      "path": "assets/rotate-ccw-CKeyBnNP.js",
+      "bytes": 368,
+      "sha256": "901e4e6f9908968a592d521e5f7fb05a45a560292d19f40f05b0633a647113df"
+    },
+    {
+      "path": "assets/save-BjbMw6Ri.js",
+      "bytes": 449,
+      "sha256": "f594f773414e1a945c60609d3e71199c19a1aea438bed5eba023ae3768a5ef2e"
+    },
+    {
+      "path": "assets/search-QlB9nC5y.js",
+      "bytes": 336,
+      "sha256": "4f25a428b011fd197829c398c71f2a4a536fc50743eeef6f0a5a0b9650635d6d"
+    },
+    {
+      "path": "assets/send-DNyShWPs.js",
+      "bytes": 336,
+      "sha256": "89f308297fd97e151d54b3e3bf7c92256fb6d51507ac1b8b73559a331443a86c"
+    },
+    {
+      "path": "assets/settings-2-CHaqTlLC.js",
+      "bytes": 416,
+      "sha256": "00045615218441c81807c3b4e18ad5bfa91ca0001b8cd174e3093f2799e2ff91"
+    },
+    {
+      "path": "assets/shield-check-Bu07vAO5.js",
+      "bytes": 488,
+      "sha256": "00b497c2135833e67ff34d8cfda63226becfbdef6d57a688e2cd3c680b9143a7"
+    },
+    {
+      "path": "assets/tableSelection-0Vxs6fra.js",
+      "bytes": 135,
+      "sha256": "485f9291baf378cd807cc7693790c09c96c2e3a5c5e2927bb303205ef224fd55"
+    },
+    {
+      "path": "assets/textSearch-eEaU3y9Z.js",
+      "bytes": 615,
+      "sha256": "3651b4dc904a5cdb3a9a42a4cc8bdb8260230953eaa4f45b673fb204ea304938"
+    },
+    {
+      "path": "assets/trash-2-Ba4qoI1b.js",
+      "bytes": 526,
+      "sha256": "627bc74292c13746b704efd93392df0fe21f345f03c6655a1ca17e8e654dec03"
+    },
+    {
+      "path": "assets/upload-cloud-BC4XdIrt.js",
+      "bytes": 420,
+      "sha256": "e6101286e0cd13f453c5f660fe9c7b0a5fad607ee0c30049d18a60aabb8ab9ea"
+    },
+    {
+      "path": "assets/uploadedDocumentActions-B4vF6FjR.js",
+      "bytes": 1605,
+      "sha256": "9e4390d805b77e80e6aafc8408369fc36c587007d6ebebed19abe02104995b68"
+    },
+    {
+      "path": "assets/useColumnResize-BVRlCRah.js",
+      "bytes": 18227,
+      "sha256": "b3631f5e43cf90d18cb6998711084dd8d01574480a3f980283b06f2c0b98bfb5"
+    },
+    {
+      "path": "assets/user-round-BPOQ1lY7.js",
+      "bytes": 345,
+      "sha256": "43a89cc90c6a7864b7f93fe53d59e1203628466e3001103e87ce9b656b7253fc"
+    },
+    {
+      "path": "assets/users-round-CM97w_rb.js",
+      "bytes": 421,
+      "sha256": "e1ba2649139fa6bb583dcb956d8fa94169a8b10fb1c5fc0022d72053035e72bc"
+    },
+    {
+      "path": "assets/workspaceHumanMetricsStore-BkUAdyGm.js",
+      "bytes": 773,
+      "sha256": "74ccd6bfb70e8b456739bb278b4fde36247917d5527022487ba7d32f23113f54"
+    },
+    {
+      "path": "assets/x-Jf2UQnm1.js",
+      "bytes": 323,
+      "sha256": "e9769e327e5814f75532efff324aa5e207b41d3ca8ff7ac61946d05813d7d99c"
+    },
+    {
+      "path": "assets/xlsx-B6sNpj_1.js",
+      "bytes": 429804,
+      "sha256": "9e14b6b21c7dceb5269ea7729ff0c1f21c78ecfe4d3213213e3954a5a6ab9158"
+    },
+    {
+      "path": "assets/zoom-out-yv7Hd1pF.js",
+      "bytes": 736,
+      "sha256": "fab1f18f345d12e7ae2a5b3d0fd0123612d47426c1f82abd2caf78e1751888e0"
+    },
+    {
+      "path": "help/additional-columns.jpg",
+      "bytes": 70686,
+      "sha256": "a5866f7ff63b3717376cad0bc515f83a0ec14f069edb84ace99b0d42136669ca"
+    },
+    {
+      "path": "help/assign-organization.jpg",
+      "bytes": 59953,
+      "sha256": "d9c704251979b008f4361f97dcea8fca17f55b38ffea343fa0c96e70878d404d"
+    },
+    {
+      "path": "help/columns-agnum.jpg",
+      "bytes": 71648,
+      "sha256": "383475a926e5ca2b1c0945f05beafbdeffd94b51d10fbbb52a781e0d31f5b211"
+    },
+    {
+      "path": "help/columns-apskaita5.jpg",
+      "bytes": 72585,
+      "sha256": "c816f44a5e8899e30a8617a28b71ff45badbcb5a18c3d011166860a9c57a7ebe"
+    },
+    {
+      "path": "help/columns-bss-api.jpg",
+      "bytes": 71280,
+      "sha256": "578e063c8e0886f73e77a20929e7ea68c1999c9f9f7539e27755da1ada3997a1"
+    },
+    {
+      "path": "help/columns-bss.jpg",
+      "bytes": 70103,
+      "sha256": "fdb1e93e85e024bb23a71baebd562282cba7574ce9ad177f5b098bc3119b91f5"
+    },
+    {
+      "path": "help/columns-business-central.jpg",
+      "bytes": 70255,
+      "sha256": "29146548370cb213a5b423e429bc5db1b81ae188d70436c86dd0a71fff45eea4"
+    },
+    {
+      "path": "help/columns-butent-kiekinis.jpg",
+      "bytes": 69396,
+      "sha256": "d17c7835e86a3c0b618a48ec6146e93a050aee823398896152328890e07e19ae"
+    },
+    {
+      "path": "help/columns-butent.jpg",
+      "bytes": 69396,
+      "sha256": "d17c7835e86a3c0b618a48ec6146e93a050aee823398896152328890e07e19ae"
+    },
+    {
+      "path": "help/columns-centas.jpg",
+      "bytes": 71102,
+      "sha256": "6d228a237743bf9d71a3d4fb3d62f3f987a704a904b3c4beb83f17c80aa6080c"
+    },
+    {
+      "path": "help/columns-csv.jpg",
+      "bytes": 72585,
+      "sha256": "c816f44a5e8899e30a8617a28b71ff45badbcb5a18c3d011166860a9c57a7ebe"
+    },
+    {
+      "path": "help/columns-debetas-excel.jpg",
+      "bytes": 71218,
+      "sha256": "ccb3824c01d4d759d826b5e3eb69b3bd637acc62da1e0e0769116d524e387efe"
+    },
+    {
+      "path": "help/columns-debetas.jpg",
+      "bytes": 72899,
+      "sha256": "23de03aa76fcc1fc80c1a2e500649dfa450ebf529331aef8bb81fda63121876d"
+    },
+    {
+      "path": "help/columns-dineta.jpg",
+      "bytes": 71842,
+      "sha256": "0cb4e08f6b90272bb44d903c73696deef052c073c408399e8fbc3dddfffc1a46"
+    },
+    {
+      "path": "help/columns-directo.jpg",
+      "bytes": 71975,
+      "sha256": "ba0d88b11f326e8ee9e8ad9202719e0270b6aaebcf9971bc0058a4ce19a0719a"
+    },
+    {
+      "path": "help/columns-euroskaita.jpg",
+      "bytes": 70870,
+      "sha256": "d1e501b7e946825dfbcef0a2792d69f9fefe9a55193528c4068cfdbd81824b2f"
+    },
+    {
+      "path": "help/columns-excel.jpg",
+      "bytes": 72585,
+      "sha256": "8179d6c0651646a7e0808ef3423154ea3ae55ea33e8b2b208f14f4d6a567c42b"
+    },
+    {
+      "path": "help/columns-finvalda-excel.jpg",
+      "bytes": 71915,
+      "sha256": "3cc6571e3d394b51023b89de821517c0a11613525bc2c29b7eab5c64b1fe4bb7"
+    },
+    {
+      "path": "help/columns-finvalda.jpg",
+      "bytes": 69239,
+      "sha256": "59e0e22079a9ff0b557d93fcca128c9ff10477539a68dbd1d24c2b5bd0d2744e"
+    },
+    {
+      "path": "help/columns-isaf.jpg",
+      "bytes": 72585,
+      "sha256": "8179d6c0651646a7e0808ef3423154ea3ae55ea33e8b2b208f14f4d6a567c42b"
+    },
+    {
+      "path": "help/columns-json.jpg",
+      "bytes": 71291,
+      "sha256": "b71605a550a82cd43a153fae1be4e2278a552bc632b2401ff30ac8de4fe45446"
+    },
+    {
+      "path": "help/columns-lobasoft.jpg",
+      "bytes": 72585,
+      "sha256": "8179d6c0651646a7e0808ef3423154ea3ae55ea33e8b2b208f14f4d6a567c42b"
+    },
+    {
+      "path": "help/columns-monet.jpg",
+      "bytes": 72444,
+      "sha256": "946ccce447403fa3ff23e15187de0a4a78ea2277c05918a935d3fc54fcd3a758"
+    },
+    {
+      "path": "help/columns-odoo.jpg",
+      "bytes": 72470,
+      "sha256": "c5accf7b924a3ea8a67a6662ef48507b31fbb6ee8465d21bf8975cf9e3173fa5"
+    },
+    {
+      "path": "help/columns-optimum.jpg",
+      "bytes": 68832,
+      "sha256": "bf2a1af6f12168d85e13fabd0e5eb2aa2079b7f5aba0eb5a56259176681d8524"
+    },
+    {
+      "path": "help/columns-paulita.jpg",
+      "bytes": 72585,
+      "sha256": "8179d6c0651646a7e0808ef3423154ea3ae55ea33e8b2b208f14f4d6a567c42b"
+    },
+    {
+      "path": "help/columns-pragma3.jpg",
+      "bytes": 72985,
+      "sha256": "9bbdcc4844679d02ff935d80e3f16a7c5fb783dfb3023971eb92edda4c4cb51d"
+    },
+    {
+      "path": "help/columns-pragma4-v2.jpg",
+      "bytes": 71469,
+      "sha256": "1dd759b0fe6da54f3f1d920454a15039745fdf35b40d00b5d38de2cfacc77368"
+    },
+    {
+      "path": "help/columns-pragma4.jpg",
+      "bytes": 71917,
+      "sha256": "425743013feea6df047a694b5d87c797019cd7262282b1ab63b2f0597e635b9f"
+    },
+    {
+      "path": "help/columns-rivile-api.jpg",
+      "bytes": 64278,
+      "sha256": "068099bae690f6366b1b9d22e6fa62a877742f65815b098d905a8ab02853f8fc"
+    },
+    {
+      "path": "help/columns-rivile-erp.jpg",
+      "bytes": 69956,
+      "sha256": "6681ce9a6dd8f851bc40860b6f256b98b9eae31c11d87ef5665002c90662fac4"
+    },
+    {
+      "path": "help/columns-rivile.jpg",
+      "bytes": 65107,
+      "sha256": "fd124e7978762e8ed4f201525168d1129aa9e54b4c3bc70042d2c1280c9ee5c7"
+    },
+    {
+      "path": "help/columns-roda.jpg",
+      "bytes": 71291,
+      "sha256": "b71605a550a82cd43a153fae1be4e2278a552bc632b2401ff30ac8de4fe45446"
+    },
+    {
+      "path": "help/columns-saikas.jpg",
+      "bytes": 72047,
+      "sha256": "1974c374c6278b1bb0de75680cd93c4d6ae501a0fb9caedb94b714a74bcce5ec"
+    },
+    {
+      "path": "help/columns-site-pro.jpg",
+      "bytes": 70957,
+      "sha256": "e1a59aa66103e6d8523ae04575772e0855f443171b9cbbb6ef814e5e24b3ec1d"
+    },
+    {
+      "path": "help/columns-standarderp.jpg",
+      "bytes": 72038,
+      "sha256": "6f796fb38442855afcbb69f762e0363063c3e07cecd3bcc2e5adcce928dd6a2c"
+    },
+    {
+      "path": "help/columns-syrve.jpg",
+      "bytes": 70190,
+      "sha256": "17e93e689b29564874b723a4826d9025ac07a40dc699a44fa09c5230a1f3d804"
+    },
+    {
+      "path": "help/columns-ucs-storehouse-v4.jpg",
+      "bytes": 71949,
+      "sha256": "3febfeecd471691751670ca53ab64d40e3a0a76765651fc60bb5cb8d242dd0be"
+    },
+    {
+      "path": "help/columns-uniconta.jpg",
+      "bytes": 72585,
+      "sha256": "8179d6c0651646a7e0808ef3423154ea3ae55ea33e8b2b208f14f4d6a567c42b"
+    },
+    {
+      "path": "help/columns-xml.jpg",
+      "bytes": 71291,
+      "sha256": "b71605a550a82cd43a153fae1be4e2278a552bc632b2401ff30ac8de4fe45446"
+    },
+    {
+      "path": "help/counterparties.jpg",
+      "bytes": 52964,
+      "sha256": "43102730e5886992a70b03593c99a5e8b0b9fe67de57f695868b16ab60d315d5"
+    },
+    {
+      "path": "help/document-dates.jpg",
+      "bytes": 80263,
+      "sha256": "c537a93da0b7579025c431d0507d5c5bfda9cf1155788d021bf054ab7be98e7c"
+    },
+    {
+      "path": "help/documents-register.jpg",
+      "bytes": 72914,
+      "sha256": "1ac1a255d68cfb2eba97cd1b9d54d9379b191d63899e168a4bd15b2b77160c6c"
+    },
+    {
+      "path": "help/expense-import.jpg",
+      "bytes": 56429,
+      "sha256": "8821ab31039019cfd3572505623f9b887eee9584e5343532d50e7855465fe8ee"
+    },
+    {
+      "path": "help/export-agnum.jpg",
+      "bytes": 65403,
+      "sha256": "0c3e61a65139e34cd3811c6d26e86077a9afe72bbc80285fdf07da405b982ba3"
+    },
+    {
+      "path": "help/export-apskaita5.jpg",
+      "bytes": 62759,
+      "sha256": "76071cc2be2e3e34bdccc33fb5d19d9ce7a6469f9319df1dfbcf666c34dc2cc6"
+    },
+    {
+      "path": "help/export-bss-api.jpg",
+      "bytes": 64434,
+      "sha256": "0197fb2c8456440f47a931644398331236603479127715374a485cbeb5b83543"
+    },
+    {
+      "path": "help/export-bss.jpg",
+      "bytes": 62409,
+      "sha256": "9b4590f60db797697a57ec28d2c602d99e24f85f71d949d7201887dafff7ac60"
+    },
+    {
+      "path": "help/export-business-central.jpg",
+      "bytes": 65510,
+      "sha256": "14766b6310d14abe20edac673dc4c90acd39818bdb2bdd2709fde928902e9feb"
+    },
+    {
+      "path": "help/export-butent-kiekinis.jpg",
+      "bytes": 62499,
+      "sha256": "fa02d1c33a4af9b45cc270db5727b017f1008fa9688c511dbfbfa6dbd90afa3d"
+    },
+    {
+      "path": "help/export-butent.jpg",
+      "bytes": 61955,
+      "sha256": "236f1b1b802716711b0b7eeda6838546e81c81109bf0c459e094bd6734c3bf92"
+    },
+    {
+      "path": "help/export-centas.jpg",
+      "bytes": 60346,
+      "sha256": "ea4fb26d28ca255d88ffe44e03a28997b80244a0255511f850b6dcc78027e16f"
+    },
+    {
+      "path": "help/export-csv.jpg",
+      "bytes": 62439,
+      "sha256": "69f42fde9d48d8c772ab36c9cf5663864f065495355d2807cfbf54ce1858167a"
+    },
+    {
+      "path": "help/export-debetas-excel.jpg",
+      "bytes": 61789,
+      "sha256": "bd2100669653437e2f8ca4914c1f06451015aa1d22c43bf79d9b97045f58fbd3"
+    },
+    {
+      "path": "help/export-debetas.jpg",
+      "bytes": 61400,
+      "sha256": "1246cb48843a58bb7bd9955e769ac7d48f2e590fbc4ae3396450bec6ba85fa95"
+    },
+    {
+      "path": "help/export-dineta.jpg",
+      "bytes": 63200,
+      "sha256": "2d6ef57728b8c43d4aac30f23b061c23e0012d8431722ace6527437582959535"
+    },
+    {
+      "path": "help/export-directo.jpg",
+      "bytes": 64095,
+      "sha256": "4de5c12cf58816e0e4b81c2c8c7135034f28327594109756dfe83304654b117c"
+    },
+    {
+      "path": "help/export-euroskaita.jpg",
+      "bytes": 62862,
+      "sha256": "5d4d432bfbd52c26870b60eb60ce1c675aea860ae688b92f6d0f741cbeac9a9a"
+    },
+    {
+      "path": "help/export-excel.jpg",
+      "bytes": 62562,
+      "sha256": "5a79fe6820d8ad3c49954f28da3817f79231c7aae18efd9a6cad03c7e970c35c"
+    },
+    {
+      "path": "help/export-finvalda-excel.jpg",
+      "bytes": 63147,
+      "sha256": "1e1991eeeceebbe5f11db5b833402c31c029a4f240e524d5395dc7fbdf0450db"
+    },
+    {
+      "path": "help/export-finvalda.jpg",
+      "bytes": 61069,
+      "sha256": "014531d2dfde5fb49830de5a12c442f5c9c5b501081c2b3ef59110e28aa7de25"
+    },
+    {
+      "path": "help/export-format-menu.jpg",
+      "bytes": 59907,
+      "sha256": "f92ca0f9d09489f116a703b77da803d7f661186838097ff5f7f9559c7fdd5419"
+    },
+    {
+      "path": "help/export-isaf.jpg",
+      "bytes": 62442,
+      "sha256": "77a7eac4b71ccc0c877bc5b900b6b703bf3433457e7974ea0d97917950ddf6de"
+    },
+    {
+      "path": "help/export-json.jpg",
+      "bytes": 62502,
+      "sha256": "4be5eaac77336ff17f7f010b85ef79a18a0a734a5f2687184b2bcc8f33e92da5"
+    },
+    {
+      "path": "help/export-lobasoft.jpg",
+      "bytes": 62712,
+      "sha256": "2e1f5ba8357da0ccec1e32400ba92859216fe2b07992cc14984bd6fe7d5a03f1"
+    },
+    {
+      "path": "help/export-monet.jpg",
+      "bytes": 60833,
+      "sha256": "d21a28feec89435d6c0e232098ea27464a902283155fb7821279240b0e79cfe9"
+    },
+    {
+      "path": "help/export-odoo.jpg",
+      "bytes": 63440,
+      "sha256": "dedcb4a8dc24a87bf348998453d3b6ff99f2483357a0bf871ddbff00bfbaabcd"
+    },
+    {
+      "path": "help/export-optimum.jpg",
+      "bytes": 63210,
+      "sha256": "54a3e054d9789e68be8fd0647666eef1f64975ee8eabcecd3a59da71d059918e"
+    },
+    {
+      "path": "help/export-paulita.jpg",
+      "bytes": 62575,
+      "sha256": "1e6fa8aa29ece83c32ad0a5c6a2f2625792dc7ba66d4ef1bff02a6ecf7bd82e5"
+    },
+    {
+      "path": "help/export-pragma3.jpg",
+      "bytes": 66310,
+      "sha256": "e3a60e6e02d44cc10d1e15933ff695b7ca487bf573142cb8d697b7f3b62a3cf0"
+    },
+    {
+      "path": "help/export-pragma4-v2.jpg",
+      "bytes": 62945,
+      "sha256": "0d128d5e538453cd59d451074c1efe54fb8ef9d8ed51e8c585d1c9bca10af92d"
+    },
+    {
+      "path": "help/export-pragma4.jpg",
+      "bytes": 68189,
+      "sha256": "23d14b88827cd58c83dca72225730e4e61fd87483aa1efddc5387bd996f22c51"
+    },
+    {
+      "path": "help/export-rivile-api.jpg",
+      "bytes": 63323,
+      "sha256": "47896143dc78c12d684d6bd4a7fd59d7c0fe73ed8223693be56f065873d41a7f"
+    },
+    {
+      "path": "help/export-rivile-erp.jpg",
+      "bytes": 62035,
+      "sha256": "6f86d5b241d471339fb871d4a1433a62444d2ecef01b21b1fdb563cc678611ad"
+    },
+    {
+      "path": "help/export-rivile.jpg",
+      "bytes": 65163,
+      "sha256": "0d434a1d6f03f1b24f9893ea6268ed0709580e9b7389196874bddbb83961d6f2"
+    },
+    {
+      "path": "help/export-roda.jpg",
+      "bytes": 62542,
+      "sha256": "0846f9a9d120054e2ae47b531b75b0aa8a50d74b4bdca7f68411e518b7d0f074"
+    },
+    {
+      "path": "help/export-saikas.jpg",
+      "bytes": 62953,
+      "sha256": "f51b22fd7d11ebcd036d05635b0983c6c337235b5a0c965bcc5538440c0717b2"
+    },
+    {
+      "path": "help/export-settings.jpg",
+      "bytes": 62549,
+      "sha256": "2dba6f99622bd50d26d69537c2363fae1c7ff9fa17ad3a19ae48a7256779be84"
+    },
+    {
+      "path": "help/export-site-pro.jpg",
+      "bytes": 68869,
+      "sha256": "94b87586adcf42f6c41aa4f94ea0c8b728ceaf7c1d6cb549aaebd72932f68174"
+    },
+    {
+      "path": "help/export-standarderp.jpg",
+      "bytes": 63082,
+      "sha256": "8e045e6ce43c1211dda0aa4d89014b43408cf3c7452bc9c49d715682c3b1eccb"
+    },
+    {
+      "path": "help/export-syrve.jpg",
+      "bytes": 62878,
+      "sha256": "66fa466a8bd28a578a761ae1954b2358e18210f5bcbab8eb6a06b8644b02352e"
+    },
+    {
+      "path": "help/export-ucs-storehouse-v4.jpg",
+      "bytes": 62579,
+      "sha256": "24b2f0372ee8435da9ee780b182a5d43946915ba745d813cde000220f6d82f0e"
+    },
+    {
+      "path": "help/export-uniconta.jpg",
+      "bytes": 62757,
+      "sha256": "0fa0251fa48b88be7e51a603ff06ed97d37c0764230fbaa8bda8997a69a80bf2"
+    },
+    {
+      "path": "help/export-xml.jpg",
+      "bytes": 62469,
+      "sha256": "b0eb16c4a4eae7539bd669731a87e281c309f62eade694e02e111c4ed7df4a9e"
+    },
+    {
+      "path": "help/google-drive.jpg",
+      "bytes": 25263,
+      "sha256": "20810554ad939ebdb7b06aad94924e00628f8dffb23a0b73e2f5fbe1865e4acc"
+    },
+    {
+      "path": "help/ocr-chats.jpg",
+      "bytes": 38596,
+      "sha256": "b26b15796da66e174882a98fd843d29cf531af6c74314d9b3bf89151e18d8e8e"
+    },
+    {
+      "path": "help/ocr-dashboard.jpg",
+      "bytes": 77906,
+      "sha256": "d87b1990dcdbf94f71b223e149de26b7ee96ee8e14695be41980617c5927e40d"
+    },
+    {
+      "path": "help/ocr-document-issues.jpg",
+      "bytes": 54149,
+      "sha256": "05605652e27ebcf6efe19490d402b2da855722c00a521670f34b11c3a5d9c167"
+    },
+    {
+      "path": "help/ocr-document-training.jpg",
+      "bytes": 81655,
+      "sha256": "566d28e04606010f7606b27982333c58413ece922e9d949c0d5be0323c385770"
+    },
+    {
+      "path": "help/ocr-issue-chat.jpg",
+      "bytes": 75839,
+      "sha256": "6eacb5d83815cbaf748fa44e61b3928801ea3e0b7e4bf84cd04503d7cb4c1935"
+    },
+    {
+      "path": "help/ocr-issue-edit.jpg",
+      "bytes": 62974,
+      "sha256": "5f7373134834161b2c23e9ece07c01f13115658e2d2b010b8bf9276c26da31e2"
+    },
+    {
+      "path": "help/ocr-learning-rule.jpg",
+      "bytes": 64499,
+      "sha256": "014e77579fab3273e77e0ba6705ca0598e99c6754741467e522300c634b2078c"
+    },
+    {
+      "path": "help/ocr-machine-learning.jpg",
+      "bytes": 72359,
+      "sha256": "df54e6580ccba9eee0a122684a20108916b5f3b8da32af2f62ee75cd3bcbec90"
+    },
+    {
+      "path": "help/ocr-my-tasks.jpg",
+      "bytes": 74432,
+      "sha256": "0b0bde92ec6c07c95a28937af26385b7d967a9023e94737bf870e184e6cd04ca"
+    },
+    {
+      "path": "help/ocr-new-chat.jpg",
+      "bytes": 54079,
+      "sha256": "214af76907a6ba3089491b047f27be544f796a8a7717f575b4530400f0a7ad4e"
+    },
+    {
+      "path": "help/ocr-notifications-bell.jpg",
+      "bytes": 79899,
+      "sha256": "a801b1f86e58ce5dd8c844e326d034f3deebe2517b093f2d49373838471673da"
+    },
+    {
+      "path": "help/ocr-notifications.jpg",
+      "bytes": 67323,
+      "sha256": "ae4bf535731161fc63543e6112c0b15a66e786e77bc20baaca9d16be16099541"
+    },
+    {
+      "path": "help/ocr-report-issue.jpg",
+      "bytes": 59977,
+      "sha256": "18dc0564d640cf65ba5b97c7644045ea6fc749cf7edddedd6129edb40179a486"
+    },
+    {
+      "path": "help/ocr-send-teamlead.jpg",
+      "bytes": 72205,
+      "sha256": "89b39845635b3988160f7ac3fab5087c55f12d39c5f0886177e203a3b196030e"
+    },
+    {
+      "path": "help/ocr-teamlead-workers.jpg",
+      "bytes": 51703,
+      "sha256": "608c811154483caa6c15c107ca1b2df1f6de9f9611ae3713fad9dd460d497c79"
+    },
+    {
+      "path": "help/ocr-teamlead.jpg",
+      "bytes": 34568,
+      "sha256": "93acf250f3c2ea59964a46783160df6bedc3cda274d379a273b8239f7b7692e5"
+    },
+    {
+      "path": "help/organization-centers-import.jpg",
+      "bytes": 50189,
+      "sha256": "fdf94fff0e338674af42ae5013d02119b437f3d4b5774ab0ad7c279bb062e233"
+    },
+    {
+      "path": "help/organization-centers-new.jpg",
+      "bytes": 40194,
+      "sha256": "a991b843a5e8ca7da9beb328b87d547108e6a075cbba3c8162ac737f4238ad0b"
+    },
+    {
+      "path": "help/organization-centers.jpg",
+      "bytes": 51181,
+      "sha256": "9888742ce963da879a65f5763c7622e481910a3efc35d38d44b9ad0af537413b"
+    },
+    {
+      "path": "help/organization-counterparties-import.jpg",
+      "bytes": 80336,
+      "sha256": "43a1161344ed4e7c118c7b8ea111238734a5c3609c577ab32124f734fc0dfde8"
+    },
+    {
+      "path": "help/organization-counterparties-new.jpg",
+      "bytes": 53438,
+      "sha256": "ebef2950fbb2603ef921bc429925e144ac086219983d6b78cc8df7639d2913eb"
+    },
+    {
+      "path": "help/organization-counterparties.jpg",
+      "bytes": 52826,
+      "sha256": "c9eee1a347b0fb857a19fffc7e9fa56e2c33f71e2637201e6efcdd28f94afa4d"
+    },
+    {
+      "path": "help/organization-departments-import.jpg",
+      "bytes": 52288,
+      "sha256": "6949411295ffa10381fec07253f41f0a72a6a35330d05bd4494e72faa0fba2eb"
+    },
+    {
+      "path": "help/organization-departments-new.jpg",
+      "bytes": 42678,
+      "sha256": "9a3fde6a6724e9b37d907c1b73be7bea93d9502414a807662386c5bf49958abc"
+    },
+    {
+      "path": "help/organization-departments.jpg",
+      "bytes": 57809,
+      "sha256": "934cb3bee8a310c29b0fe3f2022f252e97af39ec7d7b11a80909c3139833d51a"
+    },
+    {
+      "path": "help/organization-digitization.jpg",
+      "bytes": 63468,
+      "sha256": "7f9897b4112fea84fbd3df73074931de1bafc6d032b5aa519518a94de35b2f09"
+    },
+    {
+      "path": "help/organization-expenses-import.jpg",
+      "bytes": 57038,
+      "sha256": "8278c535bf8f0463ec5f4ed6dfbd28134a180b654a6fe92f63dbb832e932561f"
+    },
+    {
+      "path": "help/organization-expenses-new.jpg",
+      "bytes": 44721,
+      "sha256": "736d63a5bc1dff186e6bdd5b39e558b4108085908a7f1e1a1cb45992141fc4c9"
+    },
+    {
+      "path": "help/organization-expenses.jpg",
+      "bytes": 55966,
+      "sha256": "9c53c42353fb0c45062ef67b089424a3d9ef9e9b91f367b6a665561527d20947"
+    },
+    {
+      "path": "help/organization-groups-import.jpg",
+      "bytes": 43819,
+      "sha256": "19d2d0581b7a6dff06420fdd1e6db7e4b2122054ed826f8a7efa7b4015de3322"
+    },
+    {
+      "path": "help/organization-groups-new.jpg",
+      "bytes": 40086,
+      "sha256": "fbb43a819a877967064d41cd6d62b3e8e623bdd6f3b940a4a0475ee11a15d22b"
+    },
+    {
+      "path": "help/organization-groups.jpg",
+      "bytes": 45672,
+      "sha256": "ce7a4a332313c2c204b24039fcc5ea8d8c0de3ad67902c8bc11868ab56176531"
+    },
+    {
+      "path": "help/organization-objects-import.jpg",
+      "bytes": 51944,
+      "sha256": "94abe3de50d73521b6a5cd96e32034db53c98b5097b33cc5d4e1c96f78602616"
+    },
+    {
+      "path": "help/organization-objects-new.jpg",
+      "bytes": 42263,
+      "sha256": "a136d259499027e6936fcb88e7602db2b8c2bbe06d7f509f4d445291d34f345d"
+    },
+    {
+      "path": "help/organization-objects.jpg",
+      "bytes": 56341,
+      "sha256": "24529a45e1421aee8824db4a72f10c7c35bc1d16460928fecbde067f5df0ffd2"
+    },
+    {
+      "path": "help/organization-persons-import.jpg",
+      "bytes": 50236,
+      "sha256": "f1b9036673c0f9a41bf54376724706b35b541149433bb54a55262a8a86d6b38d"
+    },
+    {
+      "path": "help/organization-persons-new.jpg",
+      "bytes": 40199,
+      "sha256": "72723c4c3fd1b47c123a8d8bac12ea033917f4af6a2f768eaa50293a58c9caad"
+    },
+    {
+      "path": "help/organization-persons.jpg",
+      "bytes": 44518,
+      "sha256": "5f3abbeb10292b86a3361848bbced24a1927b0bb07e964fb07f178de31bce656"
+    },
+    {
+      "path": "help/organization-series-import.jpg",
+      "bytes": 53685,
+      "sha256": "da5d0a698b899212abb360baf3ed41ba314fd680e134d212e33bbb697ef09c2a"
+    },
+    {
+      "path": "help/organization-series-new.jpg",
+      "bytes": 40065,
+      "sha256": "58a455cffbc6f164e6e9ad41e37ec1b3a4a91a17b27259a163de977f45ff6255"
+    },
+    {
+      "path": "help/organization-series.jpg",
+      "bytes": 43350,
+      "sha256": "0b12ad11e9eebb42e18777154e36fab9e7f59af44eb3f1b1e28610b1b1a44a10"
+    },
+    {
+      "path": "help/sharepoint.jpg",
+      "bytes": 39113,
+      "sha256": "1c5ca3ca42cfac4316f90d18faa090d93e360fc12baa346ed89fefe8435330eb"
+    },
+    {
+      "path": "help/uploaded-documents.jpg",
+      "bytes": 79283,
+      "sha256": "b3dc290e107b780265717914d84b97173a75115dfd99f04266b640f1a8f0fa0a"
+    },
+    {
+      "path": "help/uploaded-status-details.jpg",
+      "bytes": 87131,
+      "sha256": "94cbdac5e925a50322bbda427090bb03c6e1f3b1137258d4372d11b3ededd2a7"
+    },
+    {
+      "path": "image copy copy copy copy.png",
+      "bytes": 74750,
+      "sha256": "1bcb345d9a399c40f6a5cef40f432710413cf474bb43af1d83acaca3a1651311"
+    },
+    {
+      "path": "image copy copy copy.png",
+      "bytes": 113844,
+      "sha256": "969e70faeb718245b9dc9f254ae635ca4d84cce5fdc03d98bd83ebc9d419d54d"
+    },
+    {
+      "path": "image copy copy.png",
+      "bytes": 38903,
+      "sha256": "c0f01ddb60253804dd96f31accabf071226a94fb40771c4a441a9cce8a0a1414"
+    },
+    {
+      "path": "image copy.png",
+      "bytes": 44584,
+      "sha256": "0127df34479e357f8b7a7e8c4893ae1534040dfc8000451f58dc3b7644feaaa0"
+    },
+    {
+      "path": "image.png",
+      "bytes": 17017,
+      "sha256": "9a0193c47cfb318f9f2486c4ed6203dad90fb4d934a42f897733e45d400fed69"
+    },
+    {
+      "path": "images/image copy copy copy copy copy copy copy copy copy copy copy copy copy.png",
+      "bytes": 176901,
+      "sha256": "1cd8b3f76826b51c479cecb38d4222a4c3198b5010321711c21126833d1cc1f4"
+    },
+    {
+      "path": "images/image copy copy copy copy copy copy copy copy copy copy copy copy.png",
+      "bytes": 45590,
+      "sha256": "b9f1e92214f3a1704389200faf8ab81c5a2d865b2ce737cebca96ff46c55f5eb"
+    },
+    {
+      "path": "images/image copy copy copy copy copy copy copy copy copy copy copy.png",
+      "bytes": 168153,
+      "sha256": "d9868c806cdeb2259511272bdb26b51481d37a4f3ae8f3ba0d3674443e1518b9"
+    },
+    {
+      "path": "images/image copy copy copy copy copy copy copy copy copy copy.png",
+      "bytes": 152146,
+      "sha256": "9f3f7d86efb216941c8981545534bb4b8074619617ff959819ebdca1fcfea6ca"
+    },
+    {
+      "path": "images/image copy copy copy copy copy copy copy copy copy.png",
+      "bytes": 100582,
+      "sha256": "6d01bfb856ddbb65920d2a9596339354a37dbcfcee695ebd2f595bad8ebf7645"
+    },
+    {
+      "path": "images/image copy copy copy copy copy copy copy copy.png",
+      "bytes": 83657,
+      "sha256": "d16fe9c6470037a8c33cfb8f143d050475b060ecd9d49928adf67592995c9fcb"
+    },
+    {
+      "path": "images/image copy copy copy copy copy copy copy.png",
+      "bytes": 94442,
+      "sha256": "c15d9e12ef9a27a73dc62d49b43da230b663c61f82bde50e9cc0aaaffe11c998"
+    },
+    {
+      "path": "images/image copy copy copy copy copy copy.png",
+      "bytes": 74278,
+      "sha256": "06a8bd3647cdd3f135d79da62e820e014915e3fe8dd217a0b9a510eeb31c4337"
+    },
+    {
+      "path": "images/image copy copy copy copy copy.png",
+      "bytes": 5567,
+      "sha256": "57c84ab20f3b82f499081f9e980bf9a49ef48d3e38ffce72f725fce576c1ab8b"
+    },
+    {
+      "path": "images/image copy copy copy copy.png",
+      "bytes": 49258,
+      "sha256": "adac3ced5e6f950d6cd93276753b120c4a5dcc2b92c6bf852ddb9af422762711"
+    },
+    {
+      "path": "images/image copy copy copy.png",
+      "bytes": 7923,
+      "sha256": "cbe9189c04bba266a393bd2b0eab4048385722c3fe564b4ca07d7b8340aa7f3f"
+    },
+    {
+      "path": "images/image copy copy.png",
+      "bytes": 35204,
+      "sha256": "b7c16147303bb643399b896762c62195389982ae78ff583df539035b6d69f60a"
+    },
+    {
+      "path": "images/image copy.png",
+      "bytes": 104542,
+      "sha256": "16715a9825b0be3433316821c5fff24b05263c8bf49313c147dbc8f8abe11d72"
+    },
+    {
+      "path": "images/image.png",
+      "bytes": 104542,
+      "sha256": "16715a9825b0be3433316821c5fff24b05263c8bf49313c147dbc8f8abe11d72"
+    },
+    {
+      "path": "index.html",
+      "bytes": 742,
+      "sha256": "95cf668f5bca59a20152b229feda6ac45792eec18a3e07c0254ec547fcb8f9ff"
+    }
+  ]
+}
